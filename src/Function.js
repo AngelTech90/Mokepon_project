@@ -339,31 +339,31 @@ were we can idex specific information for ever single mokepon that we are creati
 
 
       /* Here we create 6 mokepons using our class and idexing information inside our new objects */
-      let Raykiou = new Mokepon("./images/i03_raykiou.png",'Raykiou-input',"label-raykiou","Raykiou",0,0);
+      let Raykiou = new Mokepon("assets/images/i03_raykiou.png",'Raykiou-input',"label-raykiou","Raykiou",0,0);
       
-      let Joka = new Mokepon("./images/i01_joka.png",'Joka-input',"label-joka","Joka",0,0);
+      let Joka = new Mokepon("assets/images/i01_joka.png",'Joka-input',"label-joka","Joka",0,0);
       
-      let Crabster = new Mokepon("./images/i02_Crabster.png",'crabster-input',"label-crabster","Crabster",0,0);
+      let Crabster = new Mokepon("assets/images/i02_Crabster.png",'crabster-input',"label-crabster","Crabster",0,0);
       
-      let Rocker = new Mokepon("./images/Rocker.png","Rocker-input","label-rocker","Rocker",0,0);
+      let Rocker = new Mokepon("assets/images/Rocker.png","Rocker-input","label-rocker","Rocker",0,0);
       
-      let Truthler = new Mokepon("./images/Truthler.png","Truthler-input","label-truthler","Truthler",0,0);
+      let Truthler = new Mokepon("assets/images/Truthler.png","Truthler-input","label-truthler","Truthler",0,0);
       
-      let Quetzal = new Mokepon("./images/Quetzal.png","Quetzal-input","label-quetzal","Quetzal",0,0);
+      let Quetzal = new Mokepon("assets/images/Quetzal.png","Quetzal-input","label-quetzal","Quetzal",0,0);
       
    
 //*Here we define our first enemies, and we use like positions our enemiesPositions object for take the random spawn position in map:
-   let enemyRaykiou = new Mokepon("./images/i03_raykiou.png",'Raykiou-input',"label-raykiou","Raykiou",enemiesPositions.enemy3[0],enemiesPositions.enemy3[1]);
+   let enemyRaykiou = new Mokepon("assets/images/i03_raykiou.png",'Raykiou-input',"label-raykiou","Raykiou",enemiesPositions.enemy3[0],enemiesPositions.enemy3[1]);
 
-   let enemyJoka = new Mokepon("./images/i01_joka.png",'Joka-input',"label-joka","Joka",enemiesPositions.enemy1[0],enemiesPositions.enemy1[1]);
+   let enemyJoka = new Mokepon("assets/images/i01_joka.png",'Joka-input',"label-joka","Joka",enemiesPositions.enemy1[0],enemiesPositions.enemy1[1]);
       
-   let enemyCrabster = new Mokepon("./images/i02_Crabster.png",'crabster-input',"label-crabster","Crabster",enemiesPositions.enemy7[0],enemiesPositions.enemy7[1]);
+   let enemyCrabster = new Mokepon("assets/images/i02_Crabster.png",'crabster-input',"label-crabster","Crabster",enemiesPositions.enemy7[0],enemiesPositions.enemy7[1]);
 
-   let enemyRocker = new Mokepon("./images/Rocker.png","Rocker-input","label-rocker","Rocker",enemiesPositions.enemy6[0],enemiesPositions.enemy6[1]);
+   let enemyRocker = new Mokepon("assets/images/Rocker.png","Rocker-input","label-rocker","Rocker",enemiesPositions.enemy6[0],enemiesPositions.enemy6[1]);
 
-   let enemyTruthler = new Mokepon("./images/Truthler.png","Truthler-input","label-truthler","Truthler",enemiesPositions.enemy4[0],enemiesPositions.enemy4[1]);
+   let enemyTruthler = new Mokepon("assets/images/Truthler.png","Truthler-input","label-truthler","Truthler",enemiesPositions.enemy4[0],enemiesPositions.enemy4[1]);
 
-   let enemyQuetzal = new Mokepon("./images/Quetzal.png","Quetzal-input","label-quetzal","Quetzal",enemiesPositions.enemy9[0],enemiesPositions.enemy9[1]);
+   let enemyQuetzal = new Mokepon("assets/images/Quetzal.png","Quetzal-input","label-quetzal","Quetzal",enemiesPositions.enemy9[0],enemiesPositions.enemy9[1]);
 
 
    //*Here we take with the spread operator or info of our enemies in new objects for complete the 12 enemies in our map.
