@@ -138,6 +138,8 @@ header{
   /* *Costume*/
   color:#eb0909;
 
+  text-shadow: #070404 0.1rem 0.1rem 0.1rem 0.1rem;
+
 }
 
 #label-crabster{
@@ -549,6 +551,8 @@ margin-top: 4rem;
 
   /* *position*/
   text-align: center;
+
+  box-shadow: rgb(0, 0, 0) 0.3rem  0.3rem 0.3rem  0.3rem ;
 
 
 }
