@@ -114,8 +114,6 @@ const enemySectionMessage = $("enemy-atacks-box");//* Const with the visible ene
 
 const hideAttacks = $("game-functionality");//*Div were we contain our elements for rename our Mks
 
-const hideSpanElements = $("span-elements");//*Div were we contain our span elements
-
 const hideCombatTables = $("div-lifes-game");//*Div were we have our score tables
 
 const hideDivSubTittles = $("div-tittle");//*Div were we have our subtittle
@@ -792,8 +790,6 @@ function hideAttackElements(){
       we don't need at the start of the game"*/
    
       hideAttacks.style.display = "none";//Here we show our div attacks
-
-      hideSpanElements.style.display = "none";
       
       atkBox.style.display = "none";
 
@@ -2125,10 +2121,6 @@ function gameRendering(){
 
 
 //*SHOW ELEMENTS
-
-   hideAttacks.style.display = 'flex';//*Here we show our div attacks
-
-   hideSpanElements.style.display = 'flex';//*flex
 
    atkBox.style.display = "flex";//*flex
 
