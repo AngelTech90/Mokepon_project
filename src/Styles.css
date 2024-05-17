@@ -1081,10 +1081,10 @@ margin-top: 2rem;
   #move-buttons-container{
 
 
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
 
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 
   }
 
@@ -1097,7 +1097,7 @@ margin-top: 2rem;
     width: 7rem;
     height: 2rem;
 
-    margin-top: 0.5rem;
+    margin-top: 2rem;
 
   }
 
@@ -1141,8 +1141,8 @@ margin-top: 2rem;
 
   .move-button{
 
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 2rem;
+    height: 2rem;
 
     font-size: 0.6rem;
 
@@ -1151,8 +1151,8 @@ margin-top: 2rem;
 
   #mokeponMap{
 
-    width: 235px;
-    height: 235px;
+    width: 400px;
+    height: 400px;
 
   }
   
