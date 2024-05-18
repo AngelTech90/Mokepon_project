@@ -555,82 +555,6 @@ function startAnimationsForever(){
 
 }
 
-//*This function is for change the color of our atack buttons to their original color:
-function checkMkButtonsColor(){
-
-//*We use the common propertie name for chech what is the selected mokepon of our player:
-
-      
-//*This is for check Raykiou:
-      if(player.id == Raykiou.id){
-
-         $('flare').style.backgroundColor = "#9e1212";
-         $('ionicRoar').style.backgroundColor = "#888124";
-         $('incinerate').style.backgroundColor = "#9e1212";
-         $('fire-punch').style.backgroundColor = "#9e1212";
-         $('rock-spikes').style.backgroundColor = "#0b861c";
-
-      }
-      
-//*This is for check Joka:
-      if(player.id == Joka.id){
-
-         $('waterStream').style.backgroundColor = "#0f1a5c";
-         $('spring').style.backgroundColor = "#0f1a5c";
-         $('vine').style.backgroundColor = "#0b861c";
-         $('avalanche').style.backgroundColor = "#0b861c";
-         $('earthQuake').style.backgroundColor = "#0b861c";
-
-
-      }
-      
-//*This is for check Crabster:
-      if(player.id == Crabster.id){
-
-         $('iceSpikes').style.backgroundColor = "#1c509c";
-         $('blizzard').style.backgroundColor = "#1c509c";
-         $('frost').style.backgroundColor = "#1c509c";
-         $('fire-punch').style.backgroundColor = "#9e1212";
-         $('steelClaw').style.backgroundColor = "#4d504e";
-
-      }
-      
-
-//*This is for check Truthler:
-      if(player.id == Truthler.id){
-
-         $('bolt').style.backgroundColor = "#888124";
-         $('rainOfSpikes').style.backgroundColor = "#4d504e";
-         $('fireShoot').style.backgroundColor = "#9e1212";
-         $('blitz').style.backgroundColor = "#888124";
-         $('ironWhip').style.backgroundColor = "#4d504e";
-
-      }
-      
-      
-//*This is for check Rocker:
-      if(player.id == Rocker.id){
-
-         $('fracture').style.backgroundColor = "#0b861c";
-         $('metalSmash').style.backgroundColor = "#4d504e";
-         $('titaniumKick').style.backgroundColor = "#4d504e";
-         $('rockShooter').style.backgroundColor= "#0b861c";
-         $('meteor').style.backgroundColor = "#0b861c"; 
-
-      }
-      
-//*This is for check Quetzal:
-      if(player.id == Quetzal.id){
-
-         $('tornado').style.backgroundColor= "#187a59";
-         $('waterStream').style.backgroundColor = "#0f1a5c";
-         $('storm').style.backgroundColor = "#0f1a5c";
-         $('hurricane').style.backgroundColor = "#187a59";
-         $('breath').style.backgroundColor = "#187a59";
-
-      }
-
-}
 
 //*This function is for take of our mokepons all the defined and unmutable atacks in our enemies:
 function setAllenemiesAtacks(){
@@ -770,10 +694,9 @@ function cleanAtacksOfCombat(){
 
       }
       
-      finalResult.innerHTML = 'FIGHT!';//*Here we set again our combat result.
-
-      checkMkButtonsColor();//*Here we set the colors of our enemies.
       removeDefeatedEnemyOfMap()//*Here we check if we have to restore our enemy's atack.
+
+      finalResult.innerHTML = 'FIGHT!';//*Here we set again our combat result.
 
    }//*This condition render our map and hide our combat elements once a combat ends.
 
@@ -4076,7 +3999,9 @@ function startGame(){
       
       mkClass = 'air';
       
-      logIn(mkClass); attackEnemy(enemy); sequency-- ; 
+      logIn(mkClass); 
+      
+      attackEnemy(enemy); sequency-- ; 
       
       logIn("There are "+sequency+" turns at least");
    
