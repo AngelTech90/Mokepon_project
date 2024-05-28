@@ -363,35 +363,20 @@ were we can idex specific information for ever single mokepon that we are creati
 
    let enemyQuetzal = new Mokepon("assets/images/Quetzal.png","Quetzal-input","label-quetzal","Quetzal",enemiesPositions.enemy9[0],enemiesPositions.enemy9[1]);
 
+   
+   //*Copied enemies objects for add to our map enemies array to use it in our map and combat:
+   let copiedEnemyRaykiou = new Mokepon("assets/images/i03_raykiou.png",'Raykiou-input',"label-raykiou","Raykiou",enemiesPositions.enemy2[0],enemiesPositions.enemy2[1]);
 
-   //*Here we take with the spread operator or info of our enemies in new objects for complete the 12 enemies in our map.
+   let copiedEnemyJoka = new Mokepon("assets/images/i01_joka.png",'Joka-input',"label-joka","Joka",enemiesPositions.enemy8[0],enemiesPositions.enemy8[1]);
+   
+   let copiedEnemyCrabster = new Mokepon("assets/images/i02_Crabster.png",'crabster-input',"label-crabster","Crabster",enemiesPositions.enemy5[0],enemiesPositions.enemy5[1]);
 
-   //*And we take the enemies positions for generate our enemies in map, taking the properties that we are not using yet.
-   let copiedEnemyRaykiou = {...enemyRaykiou};
-      copiedEnemyRaykiou.x = enemiesPositions.enemy2[0];//* x position value.
-      copiedEnemyRaykiou.y = enemiesPositions.enemy2[1];//* y position value.
+   let copiedEnemyTruthler = new Mokepon("assets/images/Truthler.png","Truthler-input","label-truthler","Truthler",enemiesPositions.enemy10[0],enemiesPositions.enemy10[1]);
 
-   let copiedEnemyJoka = {...enemyJoka};
-      copiedEnemyJoka.x = enemiesPositions.enemy8[0];//* x position value.
-      copiedEnemyJoka.y = enemiesPositions.enemy8[1];//* y position value.
-
-   let copiedEnemyCrabster = {...enemyCrabster};
-      copiedEnemyCrabster.x = enemiesPositions.enemy5[0];//* x position value.
-      copiedEnemyCrabster.y = enemiesPositions.enemy5[1];//* y position value.
-
-   let copiedEnemyTruthler = {...enemyTruthler};
-      copiedEnemyTruthler.x = enemiesPositions.enemy10[0];//* x position value.
-      copiedEnemyTruthler.y = enemiesPositions.enemy10[1];//* y position value.
-      
-
-   let copiedEnemyQuetzal = {...enemyQuetzal};
-      copiedEnemyQuetzal.x = enemiesPositions.enemy11[0];//* x position value.
-      copiedEnemyQuetzal.y = enemiesPositions.enemy11[1];//* y position value.
+   let copiedEnemyQuetzal = new Mokepon("assets/images/Quetzal.png","Quetzal-input","label-quetzal","Quetzal",enemiesPositions.enemy11[0],enemiesPositions.enemy11[1]);
 
 
-   let copiedEnemyRocker = {...enemyRocker};
-      copiedEnemyRocker.x = enemiesPositions.enemy12[0];//* x position value.
-      copiedEnemyRocker.y = enemiesPositions.enemy12[1];//* y position value.
+   let copiedEnemyRocker = new Mokepon("assets/images/Rocker.png","Rocker-input","label-rocker","Rocker",enemiesPositions.enemy12[0],enemiesPositions.enemy12[1]);
 
 
 
@@ -568,6 +553,13 @@ function setAllenemiesAtacks(){
       enemyJoka.atacks.push(Joka.atacks[i]);
       enemyTruthler.atacks.push(Truthler.atacks[i]);
 
+      copiedEnemyCrabster.atacks.push(Crabster.atacks[i]);
+      copiedEnemyJoka.atacks.push(Joka.atacks[i]);
+      copiedEnemyQuetzal.atacks.push(Quetzal.atacks[i]);
+      copiedEnemyRaykiou.atacks.push(Raykiou.atacks[i]);
+      copiedEnemyRocker.atacks.push(Rocker.atacks[i]);
+      copiedEnemyTruthler.atacks.push(Truthler.atacks[i]);
+
    }
 }
 
@@ -695,8 +687,6 @@ function cleanAtacksOfCombat(){
       }
       
       removeDefeatedEnemyOfMap()//*Here we check if we have to restore our enemy's atack.
-
-      finalResult.innerHTML = 'FIGHT!';//*Here we set again our combat result.
 
    }//*This condition render our map and hide our combat elements once a combat ends.
 
@@ -1706,11 +1696,25 @@ if(finalResult.innerHTML == 'DRAW' || finalResult.innerHTML == 'DEFEAT'){
    //*Raykiou enemies in map statement:
       if(enemy.idMk == mapEnemies[0].idMk){
 
-            mapEnemies[0].atacks = [...Raykiou.atacks];
+            mapEnemies[0].atacks = [];
 
-      }  else if(enemy.idMk == mapEnemies[6].idMk){
+            Raykiou.atacks.forEach((atk) => {
 
-            mapEnemies[6].atacks = [...Raykiou.atacks];
+               mapEnemies[0].atacks.push(atk);
+
+            });
+
+      }
+      
+      if(enemy.idMk == mapEnemies[6].idMk){
+
+            mapEnemies[6].atacks = [];
+
+            Raykiou.atacks.forEach((atk) => {
+
+               mapEnemies[6].atacks.push(atk);
+
+            });
 
       }
 
@@ -1718,59 +1722,131 @@ if(finalResult.innerHTML == 'DRAW' || finalResult.innerHTML == 'DEFEAT'){
       //*Joka enemies in map if statement:
       if(enemy.idMk == mapEnemies[2].idMk){
 
-            mapEnemies[2].atacks = [...Joka.atacks];
+            mapEnemies[2].atacks = [];
 
-      }  else if(enemy.idMk == mapEnemies[8].idMk){
+            Joka.atacks.forEach((atk) => {
 
-            mapEnemies[8].atacks = [...Joka.atacks];
+               mapEnemies[2].atacks.push(atk);
 
-    }
+            });
+
+      }
+      
+      if(enemy.idMk == mapEnemies[8].idMk){
+
+            mapEnemies[8].atacks = [];
+
+            Joka.atacks.forEach((atk) => {
+
+               mapEnemies[8].atacks.push(atk);
+
+            });
+
+   }
 
 
       //*Crabster enemies in map if statement:
       if(enemy.idMk == mapEnemies[1].idMk){
 
-            mapEnemies[1].atacks = [...Crabster.atacks];
+            mapEnemies[1].atacks = [];
 
-    }  else if(enemy.idMk == mapEnemies[7].idMk){
+            Crabster.atacks.forEach((atk) => {
 
-            mapEnemies[7].atacks = [...Crabster.atacks];
+               mapEnemies[1].atacks.push(atk);
 
-    }
+            });
+
+      }
+      
+      if(enemy.idMk == mapEnemies[7].idMk){
+
+            mapEnemies[7].atacks = [];
+
+            Crabster.atacks.forEach((atk) => {
+
+               mapEnemies[7].atacks.push(atk);
+
+            })
+
+      }
 
 
       //*Truthler enemies in map if statement:
       if(enemy.idMk == mapEnemies[5].idMk){
 
-            mapEnemies[5].atacks = [...Truthler.atacks];
+            mapEnemies[5].atacks = [];
 
-    }  else if(enemy.idMk == mapEnemies[9].idMk){
+            Truthler.atacks.forEach((atk) => {
 
-            mapEnemies[9].atacks = [...Truthler.atacks];
+               mapEnemies[5].atacks.push(atk);
 
-    }
+            });
+
+      }
+         
+      if(enemy.idMk == mapEnemies[9].idMk){
+
+            mapEnemies[9].atacks = [];
+
+            Truthler.atacks.forEach((atk) => {
+
+               mapEnemies[9].atacks.push(atk);
+
+            });
+
+      }
 
 
       //*Quetzal enemies in map if statement:
       if(enemy.idMk == mapEnemies[3].idMk){
 
-            mapEnemies[3].atacks = [...Quetzal.atacks];
+            mapEnemies[3].atacks = [];
 
-    }  else if(enemy.idMk == mapEnemies[11].idMk){
+            Quetzal.atacks.forEach((atk) => {
 
-            mapEnemies[11].atacks = [...Quetzal.atacks];
+               mapEnemies[3].atacks.push(atk);
 
-    }
+            });
+
+      }
+      
+      if(enemy.idMk == mapEnemies[11].idMk){
+
+            mapEnemies[11].atacks = [];
+
+            
+            Quetzal.atacks.forEach((atk) => {
+
+               mapEnemies[11].atacks.push(atk);
+
+            });
+
+      }
 
 
       //*Rocker enemies in map if statement:
       if(enemy.idMk == mapEnemies[4].idMk ){
 
-            mapEnemies[4].atacks = [...Rocker.atacks];
+            mapEnemies[4].atacks = [];
 
-    }  else if(enemy.idMk == mapEnemies[10].idMk){
+            Rocker.atacks.forEach((atk) => {
 
-            mapEnemies[10].atacks = [...Rocker.atacks];
+               mapEnemies[4].atacks.push(atk);
+
+            });
+
+      }
+      
+      if(enemy.idMk == mapEnemies[10].idMk){
+
+            mapEnemies[10].atacks = [];
+
+            
+            Rocker.atacks.forEach((atk) => {
+
+               mapEnemies[10].atacks.push(atk);
+
+            });
 
    }
 
