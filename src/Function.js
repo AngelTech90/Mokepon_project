@@ -1,5 +1,6 @@
 //Main JS archive of the project
 import { text } from "./prove.js";
+console.log(text);
 
 const logIn = valor => console.log(valor);//We are asigning "the console.log()" for only need "logIn()" to use it
 
@@ -160,6 +161,8 @@ let Ice;//*This var is for represents our Crabster selection input.
 let Earth;//*This var is for represents our Joka selection input.
 
 let Quetza;//*This var is for represents our Quetzal selection input.
+
+let Truth;
 
 let Rock;//*This var is for represents our Rocker selection input.
 
@@ -4537,4 +4540,3 @@ function combat(){
 }
 
 
-console.log(text);
