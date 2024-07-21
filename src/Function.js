@@ -1,4 +1,5 @@
 //Main JS archive of the project
+import { text } from "./prove.js";
 
 const logIn = valor => console.log(valor);//We are asigning "the console.log()" for only need "logIn()" to use it
 
@@ -74,7 +75,7 @@ function takePlayerPosition(x,y){
 
                "Content-Type": "application/json"//*Here we define the data type of the response
 
-            },
+             },
 
     //*Here we define our json response body and change it for a string type object: 
             body: JSON.stringify({
@@ -82,7 +83,7 @@ function takePlayerPosition(x,y){
                x,//*x player position
                y//*y player position
 
-            })
+             })
       })
 
 }
@@ -314,7 +315,7 @@ were we can idex specific information for ever single mokepon that we are creati
          this.height = 70;
          this.idMk = randomMonster(1,1000000);
    
-         }
+          }
 
       }
 
@@ -330,7 +331,7 @@ were we can idex specific information for ever single mokepon that we are creati
          this.color = color;
          this.atackId = atackId
 
-         }
+          }
 
       }
 
@@ -726,7 +727,7 @@ function typeSetter(Mk1,MkEnemy1,Mk2,MkEnemy2){
       //* Statement for every time that our First Type got an advantage:
 
          //*Situatios were Fire wins:
-         if(Mk1 == 'fire' && MkEnemy1 == 'ice'|| Mk1 == 'fire' && MkEnemy1 == 'thunder' || Mk1 == 'fire' && MkEnemy1 == 'steel'||
+      if(Mk1 == 'fire' && MkEnemy1 == 'ice'|| Mk1 == 'fire' && MkEnemy1 == 'thunder' || Mk1 == 'fire' && MkEnemy1 == 'steel'||
    
          //*Situatios were Ice wins:
          Mk1 == 'ice' && MkEnemy1 == 'water' || Mk1 == 'ice' && MkEnemy1 == 'earth' || Mk1 == 'ice' && MkEnemy1 == 'air'||
@@ -748,17 +749,17 @@ function typeSetter(Mk1,MkEnemy1,Mk2,MkEnemy2){
    
                advantagePlayer++;//*We increase our advantage in combat for our player.
    
-               } else {
+                } else {
    
                   advantageEnemy++;//*We increase our advantage in combat for our enemy.
    
-               }
+                }
    
 
             //*Statement for every time that our Second Type got an advantage: 
 
                //*Situatios were fire wins:
-            if( Mk2 == 'fire' && MkEnemy2 == 'ice'|| Mk2 == 'fire' && MkEnemy2 == 'thunder' || Mk2 == 'fire' && MkEnemy2 == 'steel'||
+         if( Mk2 == 'fire' && MkEnemy2 == 'ice'|| Mk2 == 'fire' && MkEnemy2 == 'thunder' || Mk2 == 'fire' && MkEnemy2 == 'steel'||
    
                //*Situatios were ice wins:
                Mk2 == 'ice' && MkEnemy2 == 'water' || Mk2 == 'ice' && MkEnemy2 == 'earth' || Mk2 == 'ice' && MkEnemy2 == 'air'||
@@ -780,13 +781,14 @@ function typeSetter(Mk1,MkEnemy1,Mk2,MkEnemy2){
    
                   advantagePlayer++;//*We increase our advantage in combat for our player.
    
-                  } else{
+                   } else{
    
                      advantageEnemy++;//*We increase our advantage in combat for our enemy.
    
-                  }
+                   }
    
 }
+
 
 //*This functions is for load or virtual buttons in screen:
 function startVirtualMoveButtons(){
@@ -872,7 +874,7 @@ function checkMkColisions(){
    //*We use like reference the max amount of positions of our map, just like the "border", and we define the limit were our player can move.
 
    //*This is for the border on left side:
-         if(player.x === 564){
+      if(player.x === 564){
    
            speed = 0;
            player.x = player.x - 4;
@@ -880,7 +882,7 @@ function checkMkColisions(){
        }
 
       //*Here we are giving again our player speed once of we don't try to go our of our map:
-         if(player.x != 564){
+      if(player.x != 564){
    
               speed = maxValue;
    
@@ -888,7 +890,7 @@ function checkMkColisions(){
 
 
    //*this is for border of down side:
-         if (player.y === 564){
+      if (player.y === 564){
    
               speed = 0;
            player.y = player.y - 4;
@@ -896,7 +898,7 @@ function checkMkColisions(){
        }
 
          //*Here we are giving again our player speed once of we don't try to go our of our map: 
-         if(player.y != 564){
+      if(player.y != 564){
    
               speed = maxValue;
    
@@ -904,7 +906,7 @@ function checkMkColisions(){
    
    
    //*This is for border on top side:
-         if(player.y < 0){
+      if(player.y < 0){
    
               speed = 0;
            player.y = player.y + 4;
@@ -912,7 +914,7 @@ function checkMkColisions(){
        } 
 
          //*Here we are giving again our player speed once of we don't try to go our of our map:
-         if(player.y > 0){
+      if(player.y > 0){
    
               speed = maxValue;
    
@@ -920,7 +922,7 @@ function checkMkColisions(){
    
    
    //*This is for the colsion with the 
-         if(player.x < 0){
+      if(player.x < 0){
    
               speed = 0;
            player.x = player.x + 4;
@@ -928,7 +930,7 @@ function checkMkColisions(){
        }
 
          //*Here we are giving again our player speed once of we don't try to go our of our map:
-         if(player.x > 0){
+      if(player.x > 0){
    
               speed = maxValue;
    
@@ -968,7 +970,7 @@ function checkMkColisions(){
 
            mkColision = mkColision + 1;//*Here we check our amount of colisions
 
-         if(mkColision == 1){
+      if(mkColision == 1){
 
            enemy = {...mapEnemies[0]}//*We make that our object enemy have the information of the map enemy were our player makes colision.
 
@@ -996,7 +998,7 @@ function checkMkColisions(){
 
            mkColision = mkColision + 1;//*Here we check our amount of colisions
 
-         if(mkColision == 1){
+      if(mkColision == 1){
 
            enemy = {...mapEnemies[1]};//*We make that our object enemy have the information of the map enemy were our player makes colision.
 
@@ -1313,7 +1315,7 @@ function checkEnemyColisions(){
 
    
        //*With this we see if at least once map enemie have colisions with our player, then we check who enemy and why:
-         if(
+      if(
    
                downPlayer < mapEnemies[index].y + 43||
                upPlayer > mapEnemies[index].y + mapEnemies[index].height - 43||
@@ -1324,7 +1326,7 @@ function checkEnemyColisions(){
        } else{
    
     //*This for check 1 mk
-         if(
+      if(
    
                    downPlayer < mapEnemies[0].y + 43||
                    upPlayer > mapEnemies[0].y + mapEnemies[0].height - 43||
@@ -1335,7 +1337,7 @@ function checkEnemyColisions(){
    
               mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[0]}//*We make that our object enemy have the information of the map enemy were our player makes colision.
    
@@ -1347,12 +1349,12 @@ function checkEnemyColisions(){
    
                enemy.image = mapEnemies[0].image;//*Here we are defining oue enemy image for don't have troubles showing it in screen.
    
-           }
+            }
    
        }
    
           //*This is for check 2 mk
-         if(
+      if(
    
                    downPlayer < mapEnemies[1].y + 43||
                    upPlayer > mapEnemies[1].y + mapEnemies[1].height - 43||
@@ -1363,7 +1365,7 @@ function checkEnemyColisions(){
    
               mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[1]};//*We make that our object enemy have the information of the map enemy were our player makes colision.
    
@@ -1375,12 +1377,12 @@ function checkEnemyColisions(){
    
                enemy.image = mapEnemies[1].image;//*Here we are defining oue enemy image for don't have troubles showing it in screen.
    
-           }
+            }
    
        }
    
           //*This is for check 3 mk
-         if(
+      if(
    
                downPlayer < mapEnemies[2].y + 43||
                upPlayer > mapEnemies[2].y + mapEnemies[2].height - 43||
@@ -1391,7 +1393,7 @@ function checkEnemyColisions(){
    
            mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[2]};
    
@@ -1409,7 +1411,7 @@ function checkEnemyColisions(){
    
    
           //*This is for check 4 mk
-         if(
+      if(
    
                downPlayer < mapEnemies[3].y + 43||
                upPlayer > mapEnemies[3].y + mapEnemies[3].height - 43||
@@ -1420,7 +1422,7 @@ function checkEnemyColisions(){
    
            mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[3]};
    
@@ -1438,7 +1440,7 @@ function checkEnemyColisions(){
    
    
           //*This is for check 5 mk
-         if(
+      if(
    
                downPlayer < mapEnemies[4].y + 43||
                upPlayer > mapEnemies[4].y + mapEnemies[4].height - 43||
@@ -1449,7 +1451,7 @@ function checkEnemyColisions(){
    
            mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[4]}
                createEnemies(enemy);
@@ -1466,7 +1468,7 @@ function checkEnemyColisions(){
    
    
           //*This is for check 6 mk 
-         if(
+      if(
    
                downPlayer < mapEnemies[5].y + 43||
                upPlayer > mapEnemies[5].y + mapEnemies[5].height - 43||
@@ -1477,7 +1479,7 @@ function checkEnemyColisions(){
    
            mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[5]};
    
@@ -1495,7 +1497,7 @@ function checkEnemyColisions(){
    
    
           //*This is for check 7 mk 
-         if(
+      if(
    
                downPlayer < mapEnemies[6].y + 43||
                upPlayer > mapEnemies[6].y + mapEnemies[6].height - 43||
@@ -1506,7 +1508,7 @@ function checkEnemyColisions(){
    
            mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[6]};
    
@@ -1524,7 +1526,7 @@ function checkEnemyColisions(){
    
    
           //*This is for check 8 mk 
-         if(
+      if(
    
                downPlayer < mapEnemies[7].y + 43||
                upPlayer > mapEnemies[7].y + mapEnemies[7].height - 43||
@@ -1535,7 +1537,7 @@ function checkEnemyColisions(){
    
            mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[7]};
    
@@ -1553,7 +1555,7 @@ function checkEnemyColisions(){
    
    
           //*This is for check 9 mk 
-         if(
+      if(
    
                downPlayer < mapEnemies[8].y + 43||
                upPlayer > mapEnemies[8].y + mapEnemies[8].height - 43||
@@ -1564,7 +1566,7 @@ function checkEnemyColisions(){
    
            mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[8]};//*Here we are taking the enemy that we got a colision in our map.
    
@@ -1582,7 +1584,7 @@ function checkEnemyColisions(){
    
    
           //*This is for check 10 mk 
-         if(
+      if(
    
                downPlayer < mapEnemies[9].y + 43||
                upPlayer > mapEnemies[9].y + mapEnemies[9].height - 43||
@@ -1593,7 +1595,7 @@ function checkEnemyColisions(){
    
            mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[9]};
    
@@ -1609,7 +1611,7 @@ function checkEnemyColisions(){
    
    
           //*This is for check 11 mk 
-         if(
+      if(
    
                downPlayer < mapEnemies[10].y + 43||
                upPlayer > mapEnemies[10].y + mapEnemies[10].height - 43||
@@ -1620,7 +1622,7 @@ function checkEnemyColisions(){
    
            mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[10]};
    
@@ -1638,7 +1640,7 @@ function checkEnemyColisions(){
    
    
           //*This is for check 12 mk 
-         if(
+      if(
    
                downPlayer < mapEnemies[11].y + 43||
                upPlayer > mapEnemies[11].y + mapEnemies[11].height - 43||
@@ -1649,7 +1651,7 @@ function checkEnemyColisions(){
    
            mkColision = mkColision + 1;//*Here we check our amount of colisions
    
-         if(mkColision == 1){
+      if(mkColision == 1){
    
                enemy = {...mapEnemies[11]};
    
@@ -1672,7 +1674,7 @@ function checkEnemyColisions(){
 }
 
 //*With this function we see if our enemy is defeated for remove it of our map, and if our enemy is alive, we will reset thier atacks
-function removeDefeatedEnemyOfMap(){
+function removeDefeatedEnemyOfMap(){ 
 
    
 if(finalResult.innerHTML == 'VICTORY'){
@@ -1853,10 +1855,6 @@ if(finalResult.innerHTML == 'DRAW' || finalResult.innerHTML == 'DEFEAT'){
 }
 
 }
-
-
-
-
 
 
 //*With this function we set the name of our player in screen when we render our map:
@@ -2104,6 +2102,7 @@ function mkMapPlayerSelection(){
 
 }
 
+
 /*Function for change the display of our battle HTML elements and show it*/
 function gameRendering(){
 
@@ -2157,7 +2156,8 @@ function moveUp(valueY){
 
 }
 
- //*With this we move down our player
+
+//*With this we move down our player
 function moveDown(valueY){
 
    valueY = speed;
@@ -2168,6 +2168,7 @@ function moveDown(valueY){
    takePlayerPosition();
 
 }
+
 
  //*With this we move left our player
 function moveLeft(valueX){
@@ -2180,6 +2181,7 @@ function moveLeft(valueX){
       takePlayerPosition();
 
 }
+
 
  //*With this we move right our player
 function moveRight(valueX){
@@ -2203,6 +2205,7 @@ function moveRight(valueX){
    //* up to down.
    //* right to left.
    //* left to right.
+
 
 
 //*With this we start an animation for our enemy 1:
@@ -2351,7 +2354,7 @@ function moveEnemiesReverse3(){
 }
 
 
-
+//*With this we start an animation for our enemy 4:
 function moveEnemies4(){
 
    /* enemy Raykiou 1 */
@@ -2811,6 +2814,7 @@ function animationsCaller(){
 }
 
 
+//*This function is for make able in our widow to take the keys events:
 function letKeyEvent(){
 
    window.addEventListener('keypress',keyPress);
@@ -2825,57 +2829,60 @@ function keyPress(event){
 
       //* w a s d move keys
       case 'w':
-              moveUp();
+         moveUp();
       break;
 
       case 's':
-          moveDown();
+         moveDown();
       break;
 
       case 'a':
-          moveLeft();
+         moveLeft();
       break;
 
       case 'd':
-          moveRight();
+         moveRight();
       break;
 
-  default:
+   default:
 
       mkMapRendering();
 
       break;
 
-  }
+   }
          
    
 }
 
+
 //*This function let us able again our selection button if we selected one mokepon:
 function letUseSelectionButton(){
 
-    setInterval(() => {
+   setInterval(() => {
 
        //*If once input is cheched we valid to use our selection button:
-        if(Fire.checked == true || Rock.checked == true || Truth.checked == true || Quetza.checked == true || Earth.checked == true || Ice.checked == true){
+      if(Fire.checked == true || Rock.checked == true || Truth.checked == true || Quetza.checked == true || Earth.checked == true || Ice.checked == true){
 
             inputChecked = true;
 
-        }
+         }
 
-        if(inputChecked == true){
+      if(inputChecked == true){
 
             $('Select').disabled = false;
 
-        }  else{
+         }  else{
 
             $('Select').disabled = true;
 
-        }
+         }
 
-    },50)
+   },50)
 
 }
+
+
 
 
 hideAttackElements();//*Here we hide our atacks, because we don't load our combat functions yet.
@@ -2887,6 +2894,7 @@ setAllenemiesAtacks();//*Here we push inside all the atacks to our map enemies.
 setIdsOfAllMokepons();//*Here we create the id of all our objects
 
 
+//*This function will able all our dom elements for work with them:
 function startGame(){
 
    // joinGame();//*We generate a new user in our game to our backend
@@ -2928,7 +2936,7 @@ function startGame(){
          atkBox.innerHTML += atackStructure;
 
          i++;
-            }
+             }
 
          while(i != Raykiou.atacks.length)
 
@@ -3002,7 +3010,7 @@ function startGame(){
             $('ionicRoar').disabled = true; 
             $('ionicRoar').style.backgroundColor = "#888124" 
          
-         } 
+          } 
          
          combat();
       
@@ -3034,7 +3042,7 @@ function startGame(){
             $('incinerate').disabled = true; 
             $('incinerate').style.backgroundColor = "#9e1212" 
          
-         }
+          }
 
       combat();
 
@@ -3128,7 +3136,7 @@ function startGame(){
 
                i++;
 
-               }  while(i != Crabster.atacks.length)
+                }  while(i != Crabster.atacks.length)
 
                   i = 0;//*We reset our iterator
 
@@ -3140,7 +3148,7 @@ function startGame(){
 
                i++;
 
-            }  while( i != Crabster.atacks.length)
+             }  while( i != Crabster.atacks.length)
 
                                                                          /*Crabster atacks buttons */
                         //*First atack button "Picos de Ice"
@@ -3326,7 +3334,7 @@ function startGame(){
 
             i++;
 
-         }  while(i != Joka.atacks.length)
+          }  while(i != Joka.atacks.length)
 
             i = 0;//*We reset our iterator
 
@@ -3336,7 +3344,7 @@ function startGame(){
          
             i++;
 
-         }  while( i != Joka.atacks.length)
+          }  while( i != Joka.atacks.length)
 
 
                                                                         /*Joka atacks buttons */
@@ -3524,7 +3532,7 @@ function startGame(){
 
          i++;
 
-         }  while(i != Truthler.atacks.length);
+          }  while(i != Truthler.atacks.length);
 
       i = 0;//*We reset our iterator
 
@@ -3922,7 +3930,7 @@ function startGame(){
 
             i++;
 
-            }  while(i != Quetzal.atacks.length)
+             }  while(i != Quetzal.atacks.length)
 
       i = 0;//*We reset our iterator
 
@@ -4179,16 +4187,16 @@ function attackEnemy(bot){
 
          advantageEnemy--; 
          
-         }   else if(advantageEnemy == 2){ 
+          }   else if(advantageEnemy == 2){ 
 
             advantageEnemy--; 
 
-         }   else if(advantageEnemy == 0){
+          }   else if(advantageEnemy == 0){
 
             //* Here we delete the attack that we our enemy use once he don't have more advantage:
             bot.atacks.splice(index,1);
          
-         }
+          }
 
 }
 
@@ -4281,7 +4289,7 @@ function combat(){
 
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-           } 
+            } 
 
      /* Stop game if we lose statement */
        if(sequency == 0 && victoriesPlayer < victoriesEnemy ){
@@ -4292,14 +4300,14 @@ function combat(){
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
 
-           } } else if(sequency === 0 && victoriesPlayer == victoriesEnemy ){
+            } } else if(sequency === 0 && victoriesPlayer == victoriesEnemy ){
 
                finalResult.innerHTML = "DRAW";//*We got a final draw.
 
 
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-           } else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
+            } else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
 
               /* We will disable the buttons of Raykiou */
                $('flare').disabled = true;
@@ -4308,7 +4316,7 @@ function combat(){
                $('fire-punch').disabled = true;
                $('rock-spikes').disabled = true;
 
-           }
+            }
 
   /* Crabster statement */
    if(Ice.checked){
@@ -4321,7 +4329,7 @@ function combat(){
 
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-           } 
+            } 
            
      /* Stop game if we lose statement */
        if(sequency === 0 && victoriesPlayer < victoriesEnemy ){
@@ -4331,7 +4339,7 @@ function combat(){
 
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-           } } else if(sequency === 0 && victoriesPlayer == victoriesEnemy){
+            } } else if(sequency === 0 && victoriesPlayer == victoriesEnemy){
 
                finalResult.innerHTML = "DRAW";//*We got a final draw.
 
@@ -4339,7 +4347,7 @@ function combat(){
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
 
-           } else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
+            } else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
 
               /* We will disable the buttons of Crabster */
                $('iceSpikes').disabled = true;
@@ -4348,7 +4356,7 @@ function combat(){
                $('fire-punch').disabled = true;
                $('steelClaw').disabled = true;
 
-           }
+            }
 
 
   /* Joka statement */
@@ -4362,7 +4370,7 @@ function combat(){
 
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-           } 
+            } 
 
      /* Stop game if we lose statement */
        if(sequency === 0 && victoriesPlayer < victoriesEnemy){
@@ -4372,7 +4380,7 @@ function combat(){
 
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-           } } else if(sequency === 0 && victoriesPlayer == victoriesEnemy ){
+            } } else if(sequency === 0 && victoriesPlayer == victoriesEnemy ){
 
                finalResult.innerHTML = "DRAW";//*We got a final draw.
 
@@ -4380,7 +4388,7 @@ function combat(){
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
 
-           }  else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
+            }  else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
 
               /* We will disable the buttons of Joka */
                $('waterStream').disabled = true;
@@ -4389,7 +4397,7 @@ function combat(){
                $('avalanche').disabled = true;
                $('earthQuake').disabled = true;
 
-           }
+            }
 
 
   /* Truthler statement */
@@ -4403,7 +4411,7 @@ function combat(){
 
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-           } 
+            } 
 
      /* Stop game if we lose statement */
        if(sequency === 0 && victoriesPlayer < victoriesEnemy){
@@ -4413,7 +4421,7 @@ function combat(){
 
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-           } } else if(sequency === 0 && victoriesPlayer == victoriesEnemy ){
+            } } else if(sequency === 0 && victoriesPlayer == victoriesEnemy ){
 
                finalResult.innerHTML = "DRAW";//*We got a final draw.
 
@@ -4421,7 +4429,7 @@ function combat(){
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
 
-           }  else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
+            }  else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
 
               /* We will disable the buttons of Joka */
                $('bolt').disabled = true;
@@ -4430,7 +4438,7 @@ function combat(){
                $('blitz').disabled = true;
                $('ironWhip').disabled = true;
 
-           }
+            }
 
 
   /* Quetzal statement */
@@ -4444,7 +4452,7 @@ function combat(){
 
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-           } 
+            } 
 
      /* Stop game if we lose statement */
    if(sequency === 0 && victoriesPlayer < victoriesEnemy){
@@ -4461,7 +4469,7 @@ function combat(){
 
            endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-           }  else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
+            }  else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
 
               /* We will disable the buttons of Joka */
                $('tornado').disabled = true;
@@ -4470,7 +4478,7 @@ function combat(){
                $('hurricane').disabled = true;
                $('breath').disabled = true;
 
-           }
+            }
 
 
 
@@ -4485,7 +4493,7 @@ function combat(){
 
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
-         } 
+          } 
 
      /* Stop game if we lose statement */
       if(sequency === 0 && victoriesPlayer < victoriesEnemy){
@@ -4496,7 +4504,7 @@ function combat(){
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
 
-         } } else if(sequency === 0 && victoriesPlayer == victoriesEnemy ){
+          } } else if(sequency === 0 && victoriesPlayer == victoriesEnemy ){
 
                finalResult.innerHTML = "DRAW";//*We got a final draw.
 
@@ -4504,7 +4512,7 @@ function combat(){
                endCombat = true;//*We define if our combat ends for work with other functions in our game.
 
 
-         }  else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
+          }  else if(finalResult == "DRAW" || finalResult == "DEFEAT" || finalResult == "VICTORY"){
 
               /* We will disable the buttons of Joka */
                $('fracture').disabled = true;
@@ -4513,7 +4521,7 @@ function combat(){
                $('rockShooter').disabled = true;
                $('meteor').disabled = true; 
 
-         }
+          }
 
 
       //*Here we set the time for see when we'll clean our atacks
@@ -4521,10 +4529,12 @@ function combat(){
 
             cleanAtacksOfCombat();
 
-         },4000);
+          },4000);
 
          
 
 //*condition to check if the user's mokepon are name or isn't
 }
 
+
+console.log(text);
