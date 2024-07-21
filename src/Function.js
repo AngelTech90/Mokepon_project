@@ -479,7 +479,7 @@ were we can idex specific information for ever single mokepon that we are creati
    
 
    //*This is for when our page load we start the game  
-      window = addEventListener('load',startGame);
+      window = addEventListener('load',startGame());
 
 
 
