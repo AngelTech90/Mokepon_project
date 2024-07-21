@@ -1,7 +1,4 @@
 //Main JS archive of the project
-import { text } from "./prove.js";
-console.log(text);
-
 const logIn = valor => console.log(valor);//We are asigning "the console.log()" for only need "logIn()" to use it
 
 const $ = selector => document.getElementById(selector);//Here we are asigning the value of the function "document.getElementById()" for only need write "$("")" to use it
@@ -479,7 +476,7 @@ were we can idex specific information for ever single mokepon that we are creati
    
 
    //*This is for when our page load we start the game  
-      window = addEventListener('load',startGame());
+      window = addEventListener('load',startGame);
 
 
 
