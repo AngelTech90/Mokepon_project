@@ -24,7 +24,7 @@
 body{
 
   background-color:#060818;
-  
+
 }
 
 
@@ -32,9 +32,9 @@ body{
 
 /*Elements position*/
   display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;/*flex-flow combine "flex-direction" and "flex-wrap"*/
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;/*flex-flow combine "flex-direction" and "flex-wrap"*/
   gap:1.5rem
     
 }
@@ -44,10 +44,10 @@ header{
 
   /*personalzacion*/
   color:#12fcdd;
-  font-size:8rem;
-  background-color:#0e0f0f;
-  font-family: 'Arimo', sans-serif;;
-  text-align: center;
+    font-size:8rem;
+    background-color:#0e0f0f;
+    font-family: 'Arimo', sans-serif;;
+    text-align: center;
 
   text-shadow: #04da81 0.4rem 0.1rem 0.2rem;
 
@@ -58,8 +58,8 @@ header{
 
   /*Elements position*/
   display: flex;
-  flex-flow: column;
-  align-items: center;
+    flex-flow: column;
+    align-items: center;
 
 
 }
@@ -68,7 +68,7 @@ header{
 .image-label-mokepon{
 
   width: 12rem;
-  height: 15rem;
+    height: 15rem;
 
 }
 
@@ -77,15 +77,14 @@ header{
 
   /* *Costume*/
     color: lightseagreen;
-    font-size: 4rem;
-    background: #070116;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+        font-size: 4rem;
+        background: #070116;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 
   /* *size */
     width:65%;
-    border-radius:2rem;
+        border-radius:2rem;
 
   /* *position */
     padding:0 5% 0 5%;
@@ -100,9 +99,9 @@ header{
   
   /*Element position*/
   display:flex;
-  align-items:center;
-  flex-flow: column;
-  justify-content: center;
+    align-items:center;
+    flex-flow: column;
+    justify-content: center;
 
 }
 
@@ -110,11 +109,11 @@ header{
 #game-functionality{
 
   width: 100%;
-  height: fit-content;
+    height: fit-content;
 
   display: flex;
-  flex-flow: row;
-  justify-content: center;
+    flex-flow: row;
+    justify-content: center;
 
 }
 
@@ -123,9 +122,9 @@ header{
 
   /*Elements position*/
     display:flex;
-    justify-content:center;
-    color:azure;
-    align-items: center;/*align-items is a shorthand to use */
+        justify-content:center;
+        color:azure;
+        align-items: center;/*align-items is a shorthand to use */
     flex-flow: column;
 
     gap:1.7rem;
@@ -145,11 +144,11 @@ header{
 
   /*Element position*/
       display:flex;
-    justify-content:center;
-    color:azure;
-    align-items: center;
-    flex-flow:column;
-    gap:1.7rem;  
+          justify-content:center;
+          color:azure;
+          align-items: center;
+          flex-flow:column;
+          gap:1.7rem;  
 
   /* *size*/
   
@@ -176,7 +175,7 @@ header{
 
   /* *Costume*/
   color:var(--JokaLabelColor);
-  
+
 }
 
 #label-rocker{
@@ -204,27 +203,28 @@ header{
 
   /* *Costume*/
   background-color:#1a1288;
-  color:#1cc4a0;
-  font-family:'PT Sans Narrow', sans-serif;;
+    color:#1cc4a0;
+    font-family:'PT Sans Narrow', sans-serif;;
 
   /* *Size*/
   font-size:2rem;
-  width:7rem;
-  height:3.5rem;
-  box-sizing: border-box;
-  margin:2rem;
-  border-radius: 15%;
+    width:7rem;
+    height:3.5rem;
+    box-sizing: border-box;
+    margin:2rem;
+    border-radius: 15%;
 
   /*Element position*/
   display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #Combat-Tittle{
 
   font-size: large;
-  color:red;
+    color:red;
 
 
 }
@@ -233,7 +233,7 @@ header{
 .fire{
 
     background-color: #e20a0a;
-    
+
 }
 
 .Fire{
@@ -247,7 +247,7 @@ header{
 
   /* *Costume*/
   background-color: #043783;
-  
+
 }
 
 
@@ -302,7 +302,7 @@ header{
 
    /* *Costume*/
   background-color: #0ae49b;
-  
+
 }
 
 .Air{
@@ -329,12 +329,12 @@ header{
 
   /* *Size*/
   width: 11rem;
-  height: 5rem;
-  border-radius:10%;
-  font-size:1.5rem;
-  color:azure;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-  
+    height: 5rem;
+    border-radius:10%;
+    font-size:1.5rem;
+    color:azure;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
 
 }
 
@@ -347,24 +347,24 @@ header{
   /* *Position*/
 
   display:flex;
-  justify-content: center;
-  flex-flow: row;
-  gap:1.2rem;
+    justify-content: center;
+    flex-flow: row;
+    gap:1.2rem;
 }
 
 #input-rename-mokepon{
 
   /* *Size*/
   width: 9rem;
-  height: 2.6rem;
-  border-radius:7%;
-  margin:1rem 0 1rem 0;
-  font-size:1.3rem;
+    height: 2.6rem;
+    border-radius:7%;
+    margin:1rem 0 1rem 0;
+    font-size:1.3rem;
 
   /* *Costume*/
   background-color:#73e9b2;
-  color:#0521a0;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#0521a0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   /* *Position*/
   text-align: center;
@@ -374,14 +374,14 @@ header{
 
     /* *Costume*/
       background-color: #19d6c6;
-      color:#0c0b50;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
+            color:#0c0b50;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     /* *Size*/
       font-size: 1.5rem;
-      height:3rem;
-      width:7rem;
-      border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+            height:3rem;
+            width:7rem;
+            border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
 
 }
 
@@ -389,8 +389,8 @@ header{
 
   /* *Costume*/
   color:#0fd392;
-  font-size: 2.3rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
@@ -473,14 +473,14 @@ header{
 
   /* *costume*/
     color:#1ddf2d;
-    background-color: #000000;
-    font-size: 1.3rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #000000;
+        font-size: 1.3rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
   /* *size */
     width: 22rem;
-    height: 2.3rem;
-    border-radius: 11px 11px 11px 11px;
+        height: 2.3rem;
+        border-radius: 11px 11px 11px 11px;
 
 }
 
@@ -488,7 +488,7 @@ header{
 #reset_Game_section{
 
   display: flex;
-  flex-flow: column-reverse;
+    flex-flow: column-reverse;
 
   align-self: center;
 
@@ -511,11 +511,11 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 #VersusMessage{
 
   justify-self: center;
-  align-self: center;
+    align-self: center;
 
   /* *Costume */
   color: #18dba1;
-  font-family:'Prompt', sans-serif;;
+    font-family:'Prompt', sans-serif;;
 
   /* *Size */
   font-size: 3rem;
@@ -531,7 +531,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 /* *Costume */
   font-size: 1.3rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -546,14 +546,14 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
   /* *Size*/
   width: 17rem;
-  height: 24rem;
-  border-radius:8%;
+    height: 24rem;
+    border-radius:8%;
 
   /* *Costume*/
   background-color: #031b1f;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  color:aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color:aliceblue;
 
   /* *position */
   text-align: center;
@@ -577,7 +577,7 @@ margin-top: 2rem;
 
   /* *Costume*/
   color:#04da81;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
   /* *Size*/
   font-size: 2rem;
@@ -593,35 +593,34 @@ margin-top: 2rem;
 
   /* *Size*/
     width:12rem;
-    height:2.5rem;
-    font-size: 1.4rem;
+        height:2.5rem;
+        font-size: 1.4rem;
 
   /* *Costume*/
     color:#d6ec0e;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:#9804bd;
-    border-radius: 1rem 1rem 1rem 1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color:#9804bd;
+        border-radius: 1rem 1rem 1rem 1rem;
 
 }
 
 
 .label-mokepon{
-
   /* *costume*/
   background-color:#007599;
-  border:#01061d solid 0.6rem;
-  font-family:'Arimo', sans-serif ;
-  
+    border:#01061d solid 0.6rem;
+    font-family:'Arimo', sans-serif ;
   /* *Size*/
   font-size:2.4rem;
-  border-radius: 12% 12% 12% 12%;
-
+    border-radius: 12% 12% 12% 12%;
   /* *position*/
   text-align: center;
-
   box-shadow: rgb(0, 0, 0) 0.3rem  0.3rem 0.3rem  0.3rem ;
+  transition: all 400ms;
+}
 
-
+.label-mokepon:hover{
+  scale: 1.03;
 }
 
 
@@ -640,7 +639,7 @@ margin-top: 2rem;
 .spanTurns{
 
   color:#beac0d;
-  font-size: 2.4rem;
+    font-size: 2.4rem;
 
 }
 
@@ -649,14 +648,14 @@ margin-top: 2rem;
 
   /* *Costume*/
   background-color: #19d6c6;
-  color:#0c0b50;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#0c0b50;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 /* *Size*/
   font-size: 1.3rem;
-  height: 3rem;
-  width: 7rem;
-  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
 
   margin-bottom: 0.7rem;
 
@@ -677,15 +676,15 @@ margin-top: 2rem;
 #mapContainer{
 
   display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 
   gap:17%;
 
   color:#42b68f;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size:1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1.3rem;
 
 }
 
@@ -693,9 +692,9 @@ margin-top: 2rem;
 
   /** Costume*/
   border: white 3px solid;
-  
+
   background-repeat: no-repeat;
-  
+
 }
 
 
@@ -704,11 +703,11 @@ margin-top: 2rem;
   margin-top:1rem;
 
   width: 7rem;
-  height: 7rem;
+    height: 7rem;
 
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows:repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
 
 
 }
@@ -720,7 +719,7 @@ margin-top: 2rem;
   background-color: #42b68f;
 
   width: 2.4rem;
-  height: 2.4rem;
+    height: 2.4rem;
 
     font-size: 1rem;
 
@@ -741,7 +740,7 @@ margin-top: 2rem;
 #move-right{
 
   grid-area: 2/3/2/3;
-  
+
 
 }
 
@@ -758,10 +757,10 @@ margin-top: 2rem;
   font-size: 1.3rem;
 
   width: 10rem;
-  height: 2.5rem;
+    height: 2.5rem;
 
   color:azure;
-  background: #9804bd;
+    background: #9804bd;
 
 }
 
@@ -774,13 +773,13 @@ margin-top: 2rem;
     0%,100%{
   
       transform: translateY(0);
-  
+
     }
   
     50%{
   
       transform: translateY(0.2rem);
-  
+
     }
   
   }
@@ -791,13 +790,13 @@ margin-top: 2rem;
     0%,100%{
   
       transform: translateX(0);
-  
+
     }
   
     50%{
   
       transform: translateX(1rem);
-  
+
     }
   
   }
@@ -809,13 +808,13 @@ margin-top: 2rem;
     0%,100%{
   
       transform: translateX(0);
-  
+
     }
   
     50%{
   
       transform: translateX(-1rem);
-  
+
     }
   
   }
@@ -824,7 +823,7 @@ margin-top: 2rem;
   #div-lifes-game{
 
     display: flex;
-    flex-flow: row;
+        flex-flow: row;
 
     width: 100%;
 
@@ -834,9 +833,9 @@ margin-top: 2rem;
   #attack-buttons{
 
     flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1.7rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1.7rem;
 
   }
 
@@ -844,7 +843,7 @@ margin-top: 2rem;
   #new-game{
 
     font-size: 1.2rem;
-    width: 8rem;
+        width: 8rem;
 
   }
 
@@ -852,12 +851,12 @@ margin-top: 2rem;
   .label-mokepon{
 
     width:10rem;
-    height:11rem;
-    font-size: 1rem;
+        height:11rem;
+        font-size: 1rem;
 
     display: flex;
-    flex-flow:column-reverse;
-    
+        flex-flow:column-reverse;
+
 
   }
 
@@ -865,7 +864,7 @@ margin-top: 2rem;
   .enemy_image{
 
     width: 11rem;
-    height: 12.3rem;
+        height: 12.3rem;
 
   }
 
@@ -873,7 +872,7 @@ margin-top: 2rem;
   .player_image{
 
     width: 11rem;
-    height: 12.3rem;
+        height: 12.3rem;
 
   }
 
@@ -881,10 +880,10 @@ margin-top: 2rem;
   #subtittle{
 
     font-size:1.8rem;
-    height: 4%;
-    width:63%;
-    display: flex;
-    justify-content: center;
+        height: 4%;
+        width:63%;
+        display: flex;
+        justify-content: center;
 
   }
 
@@ -892,7 +891,7 @@ margin-top: 2rem;
   .image-label-mokepon{
 
     width: 7rem;
-    height: 8rem;
+        height: 8rem;
 
   }
 
@@ -900,8 +899,8 @@ margin-top: 2rem;
   #Select{
 
     font-size: 1.3rem;
-    height: 2rem;
-    width: 4rem;
+        height: 2rem;
+        width: 4rem;
 
   }
 
@@ -918,7 +917,7 @@ margin-top: 2rem;
   #mokeponMap{
 
     width: 400px;
-    height:400px
+        height:400px
 
   }
 
@@ -943,7 +942,7 @@ margin-top: 2rem;
     font-size: 1rem;
 
     width: 7rem;
-    height: 3.5rem;
+        height: 3.5rem;
 
   }
 
@@ -961,7 +960,7 @@ margin-top: 2rem;
   #span-elements{
 
     justify-content: start;
-    gap:0.2rem;
+        gap:0.2rem;
 
   }
 
@@ -981,8 +980,8 @@ margin-top: 2rem;
   .label-mokepon{
 
     width:56%;
-    height:102%;
-    font-size:1.3rem;
+        height:102%;
+        font-size:1.3rem;
 
   }
 
@@ -1016,13 +1015,13 @@ margin-top: 2rem;
     0%,100%{
   
       transform: translateY(0);
-  
+
     }
   
     50%{
   
       transform: translateY(0.5rem);
-  
+
     }
 
   }
@@ -1034,13 +1033,13 @@ margin-top: 2rem;
     0%,100%{
   
       transform: translateX(0);
-  
+
     }
   
     50%{
   
       transform: translateX(0.5rem);
-  
+
     }
   
   }
@@ -1052,13 +1051,13 @@ margin-top: 2rem;
     0%,100%{
   
       transform: translateX(0);
-  
+
     }
   
     50%{
   
       transform: translateX(-0.5rem);
-  
+
     }
   
   }
@@ -1067,7 +1066,7 @@ margin-top: 2rem;
   .image-label-mokepon{
 
     width: 9rem;
-    height: 10rem;
+        height: 10rem;
 
   }
 
@@ -1082,7 +1081,7 @@ margin-top: 2rem;
 
 
     width: 6rem;
-    height: 6rem;
+        height: 6rem;
 
     margin-top: 1rem;
 
@@ -1092,10 +1091,10 @@ margin-top: 2rem;
   #reset_button{
 
     font-size: 0.8rem;
-    border-radius: 1rem;
+        border-radius: 1rem;
 
     width: 7rem;
-    height: 2rem;
+        height: 2rem;
 
     margin-top: 2rem;
 
@@ -1121,12 +1120,12 @@ margin-top: 2rem;
   #div-tittle{
 
     width: 100%;
-    height: fit-content;
+        height: fit-content;
 
     display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    justify-content: center;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
 
   }
 
@@ -1134,7 +1133,7 @@ margin-top: 2rem;
   #subtittle{
 
     width: 70%;
-    font-size:1rem;
+        font-size:1rem;
 
   }
 
@@ -1142,7 +1141,7 @@ margin-top: 2rem;
   .move-button{
 
     width: 2rem;
-    height: 2rem;
+        height: 2rem;
 
     font-size: 0.6rem;
 
@@ -1152,7 +1151,7 @@ margin-top: 2rem;
   #mokeponMap{
 
     width: 400px;
-    height: 400px;
+        height: 400px;
 
   }
   
@@ -1181,7 +1180,7 @@ margin-top: 2rem;
   #div-lifes-game{
 
     display: flex;
-    flex-flow: row;
+        flex-flow: row;
 
     justify-content: center;
 
@@ -1193,14 +1192,14 @@ margin-top: 2rem;
   .life-score{
 
     height: 9rem;
-    width: 100%;
+        width: 100%;
 
   }
 
   #imageMkPlayer, #imageMkEnemy{
 
     width: fit-content;
-    height: fit-content;
+        height: fit-content;
 
   }
 
@@ -1208,8 +1207,8 @@ margin-top: 2rem;
   .fire, .ice, .earth, .air, .thunder, .steel, .water{
 
     width: 6.5rem;
-    height: 2.5rem;
-    font-size: 0.7rem;
+        height: 2.5rem;
+        font-size: 0.7rem;
 
   }
 
@@ -1237,7 +1236,7 @@ margin-top: 2rem;
   #new-game{
 
     width: 4rem;
-    height: 2rem;
+        height: 2rem;
 
     font-size: 0.8rem;
 
@@ -1247,7 +1246,7 @@ margin-top: 2rem;
   .player_image, .enemy_image{
 
     width: 5rem;
-    height: 5rem;
+        height: 5rem;
 
 
   }
@@ -1270,7 +1269,7 @@ margin-top: 2rem;
   #attack-buttons{
 
     flex-flow: row;
-    gap:0.3rem;
+        gap:0.3rem;
 
     margin-top: 1rem;
 
@@ -1287,7 +1286,7 @@ margin-top: 2rem;
   .player_image, .enemy_image{
 
     width: 5.2rem;
-    height: 5.2rem;
+        height: 5.2rem;
 
   }
 
@@ -1295,7 +1294,7 @@ margin-top: 2rem;
   #reset_Game_section{
 
     width: 5rem;
-    height: 9rem;
+        height: 9rem;
 
   }
 
@@ -1443,8 +1442,8 @@ width:fit-content;
     #Angel{
 
   position:aboslute;
-  top:50%;
-  left:50%
+    top:50%;
+    left:50%
   transform :translate(-50%, -50%);
 
     }
@@ -1457,9 +1456,9 @@ width:fit-content;
   #Juan{
 
   display:flex;
-  justify-content:center;
-  align-items: center;
-  }
+    justify-content:center;
+    align-items: center;
+    }
 
   Este metodo es moderno, y nos sera util para la gran mayoria de cosas que queramos centrar con css
 
@@ -1468,7 +1467,7 @@ width:fit-content;
   #last{
 
     display grid;
-  }
+      }
 
   .last.grid-item{
 
@@ -1500,30 +1499,30 @@ a trick with grid is use repeat that let us aply the same values for a lot of ne
 
 .container {
   display: grid;
-  grid-auto-flow: column dense;
+    grid-auto-flow: column dense;
 
   grid-template-columns: repeat(4, [col] 1fr);
-  grid-template-rows: repeat(5, [row] 150px);
-}
+    grid-template-rows: repeat(5, [row] 150px);
+  }
 
   LONG FORM
 
   .container {
   display: grid;
-  grid-auto-flow: column dense;
+    grid-auto-flow: column dense;
 
   grid-template-columns:
     [col] 1fr
     [col] 1fr
     [col] 1fr
     [col] 1fr;
-  grid-template-rows:
+      grid-template-rows:
     [row] 150px
     [row] 150px
     [row] 150px
     [row] 150px
     [row] 150px;
-}
+    }
 
 A useful trick when we want to aply a gap toward our grid elements is use only "gap", and aply the row gap and the column gap 
 
@@ -1535,15 +1534,15 @@ A useful trick when we want to aply a gap toward our grid elements is use only "
 
   "old"
   grid-gap: <grid-row-gap> <grid-column-gap>;
-}
+  }
 
 example
 
 .container {
   grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px; 
+    grid-template-rows: 80px auto 80px; 
   gap: 15px 10px;
-}
+  }
 
 
 PLACE ITEMS
@@ -1556,8 +1555,8 @@ example
 
 .contentExample{
   display:grid;
-  place-items:center start;
-}
+    place-items:center start;
+  }
 
 This can be very useful for super quick multi-directional centering.
 
@@ -1569,7 +1568,7 @@ example:
 
 .placeContentExample{
   display:grid;
-  place-content:start space-between;
+    place-content:start space-between;
 
 }
 
@@ -1580,8 +1579,8 @@ example
 #ex{
   
   display:grid;
-  grid-template-column:repeat(auto-fill,10px);
-  grid-template-row:repeat(auto-fit,10px);
+    grid-template-column:repeat(auto-fill,10px);
+    grid-template-row:repeat(auto-fit,10px);
 
 }
 
@@ -1614,7 +1613,7 @@ example:
 #tulas{
 
   grid-auto-rows:234px;
-  grid-auto-columns:300px;
+    grid-auto-columns:300px;
 
 }
 
