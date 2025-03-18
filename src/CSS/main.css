@@ -7,1650 +7,801 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500;600&family=Cabin:ital@1&family=Fira+Sans:ital,wght@0,900;1,400&family=Kanit&family=Lato:wght@700&family=Mulish&family=PT+Sans+Narrow&family=Playpen+Sans:wght@500&family=Prompt&family=Roboto+Condensed:ital,wght@1,500&family=Rowdies&family=Sometype+Mono&family=Space+Grotesk:wght@700&display=swap');
 
 
-:root{
-
-
-/*Label mokepons colors*/
---RockerLabelColor: rgb(21, 163, 21);
---JokaLabelColor:lawngreen;
---RaykiouLabelColor:#eb0909;
---QuetzalLabelColor:aquamarine;
---CrasterLabelColor:deepskyblue;
---TruthlerLabelColor:#453e3e;
-
+:root {
+  --RockerLabelColor: rgb(21, 163, 21);
+  --JokaLabelColor: lawngreen;
+  --RaykiouLabelColor: #eb0909;
+  --QuetzalLabelColor: aquamarine;
+  --CrasterLabelColor: deepskyblue;
+  --TruthlerLabelColor: #453e3e;
 }
 
-
-body{
-
-  background-color:#060818;
-
+body {
+  background-color: #060818;
 }
 
-
-#div-selection-mokepon{
-
-/*Elements position*/
-  display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row;/*flex-flow combine "flex-direction" and "flex-wrap"*/
-  gap:1.5rem
-    
+#div-selection-mokepon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  gap: 1.5rem
 }
 
-
-header{
-
-  /*personalzacion*/
-  color:#12fcdd;
-    font-size:8rem;
-    background-color:#0e0f0f;
-    font-family: 'Arimo', sans-serif;;
-    text-align: center;
-
+header {
+  color: #12fcdd;
+  font-size: 8rem;
+  background-color: #0e0f0f;
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
   text-shadow: #04da81 0.4rem 0.1rem 0.2rem;
-
 }
 
-
-#div-tittle{
-
-  /*Elements position*/
+#div-tittle {
   display: flex;
-    flex-flow: column;
-    align-items: center;
-
-
+  flex-flow: column;
+  align-items: center;
 }
 
-
-.image-label-mokepon{
-
+.image-label-mokepon {
   width: 12rem;
-    height: 15rem;
-
+  height: 15rem;
 }
 
-
-#subtittle{
-
-  /* *Costume*/
-    color: lightseagreen;
-        font-size: 4rem;
-        background: #070116;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-
-  /* *size */
-    width:65%;
-        border-radius:2rem;
-
-  /* *position */
-    padding:0 5% 0 5%;
-
-  
-
-
+#subtittle {
+  color: lightseagreen;
+  font-size: 4rem;
+  background: #070116;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  width: 65%;
+  border-radius: 2rem;
+  padding: 0 5% 0 5%;
 }
 
-
-#selection-button{
-  
-  /*Element position*/
-  display:flex;
-    align-items:center;
-    flex-flow: column;
-    justify-content: center;
-
+#selection-button {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
 }
 
-
-#game-functionality{
-
+#game-functionality {
   width: 100%;
-    height: fit-content;
-
+  height: fit-content;
   display: flex;
-    flex-flow: row;
-    justify-content: center;
-
+  flex-flow: row;
+  justify-content: center;
 }
 
-
-#rename_Mk_form{
-
-  /*Elements position*/
-    display:flex;
-        justify-content:center;
-        color:azure;
-        align-items: center;/*align-items is a shorthand to use */
-    flex-flow: column;
-
-    gap:1.7rem;
-
-    background: #076a7b;
-
-    width: 35%;
-
-    align-self: center;
-
-    border-radius: 3rem 3rem 3rem 3rem;
-
+#rename_Mk_form {
+  display: flex;
+  justify-content: center;
+  color: azure;
+  align-items: center;
+  flex-flow: column;
+  gap: 1.7rem;
+  background: #076a7b;
+  width: 35%;
+  align-self: center;
+  border-radius: 3rem 3rem 3rem 3rem;
 }
 
-
-#span-elements{
-
-  /*Element position*/
-      display:flex;
-          justify-content:center;
-          color:azure;
-          align-items: center;
-          flex-flow:column;
-          gap:1.7rem;  
-
-  /* *size*/
-  
-    
+#span-elements {
+  display: flex;
+  justify-content: center;
+  color: azure;
+  align-items: center;
+  flex-flow: column;
+  gap: 1.7rem;
 }
-/*label de los inputs*/
 
-#label-raykiou{
-
-  /* *Costume*/
-  color:var(--RaykiouLabelColor);
-
+#label-raykiou {
+  color: var(--RaykiouLabelColor);
   text-shadow: #070404 0.1rem 0.1rem 0.1rem 0.1rem;
-
 }
 
-#label-crabster{
-
+#label-crabster {
   color: var(--CrasterLabelColor)
-
 }
 
-#label-joka{
-
-  /* *Costume*/
-  color:var(--JokaLabelColor);
-
+#label-joka {
+  color: var(--JokaLabelColor);
 }
 
-#label-rocker{
-
-  /* *Costume*/
-  color:var(--RockerLabelColor);
-
+#label-rocker {
+  color: var(--RockerLabelColor);
 }
 
-#label-quetzal{
-
-  /*personalizacio*/
-  color:var(--QuetzalLabelColor);
-
+#label-quetzal {
+  color: var(--QuetzalLabelColor);
 }
 
-#label-truthler{
-
-  /*personalizacio*/
-  color:var(--TruthlerLabelColor);
-
+#label-truthler {
+  color: var(--TruthlerLabelColor);
 }
 
-#Select{
-
-  /* *Costume*/
-  background-color:#1a1288;
-    color:#1cc4a0;
-    font-family:'PT Sans Narrow', sans-serif;;
-
-  /* *Size*/
-  font-size:2rem;
-    width:7rem;
-    height:3.5rem;
-    box-sizing: border-box;
-    margin:2rem;
-    border-radius: 15%;
-
-  /*Element position*/
-  display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-#Combat-Tittle{
-
-  font-size: large;
-    color:red;
-
-
-}
-
-
-.fire{
-
-    background-color: #e20a0a;
-
-}
-
-.Fire{
-
-  /* *Costume*/
-    color: #e20a0a;
-
-}
-
-.ice{
-
-  /* *Costume*/
-  background-color: #043783;
-
-}
-
-
-.Ice{
-
-  color:#043783;
-
-}
-
-
-.earth{
-
-  background-color: #0ae227;
-
-}
-
-.Earth{
-
-  color:#0ae227;
-
-}
-
-
-.steel{
-
-  background-color: #838884;
-
-}
-
-.Steel{
-
-  color:#838884;
-
-}
-
-
-.thunder{
-
-   /* *Costume*/
-  background-color: #e4d50a;
-
-}
-
-.Thunder{
-
-  color:#e4d50a;
-
-}
-
-
-.air{
-
-   /* *Costume*/
-  background-color: #0ae49b;
-
-}
-
-.Air{
-
-  color:#0ae49b;
-
-}
-
-
-.water{
-
-  background-color:#0d1f85;
-
-}
-
-.Water{
-
-  color:#0d1f85;
-
-}
-
-
-.fire, .water, .air, .earth, .steel, .thunder, .ice{
-
-  /* *Size*/
-  width: 11rem;
-    height: 5rem;
-    border-radius:10%;
-    font-size:1.5rem;
-    color:azure;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-
-
-}
-
-
-#attack-buttons{
-
-/* *Size*/
-  margin-top: 3rem;
-
-  /* *Position*/
-
-  display:flex;
-    justify-content: center;
-    flex-flow: row;
-    gap:1.2rem;
-}
-
-#input-rename-mokepon{
-
-  /* *Size*/
-  width: 9rem;
-    height: 2.6rem;
-    border-radius:7%;
-    margin:1rem 0 1rem 0;
-    font-size:1.3rem;
-
-  /* *Costume*/
-  background-color:#73e9b2;
-    color:#0521a0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-  /* *Position*/
-  text-align: center;
-}
-
-#Rename-mokepon{
-
-    /* *Costume*/
-      background-color: #19d6c6;
-            color:#0c0b50;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    /* *Size*/
-      font-size: 1.5rem;
-            height:3rem;
-            width:7rem;
-            border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
-
-}
-
-#label-rename-button{
-
-  /* *Costume*/
-  color:#0fd392;
-    font-size: 2.3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
-
-.image-label-mokepon{
-
-  animation: moveMk linear 1s infinite;
-
-}
-
-@keyframes moveMk{
-
-  0%,100%{
-
-    transform: translateY(0);
-
-  }
-
-  50%{
-
-    transform: translateY(1rem);
-
-  }
-
-}
-
-
-@keyframes moveMkInFight{
-
-  0%,100%{
-
-    transform: translateX(0);
-
-  }
-
-  50%{
-
-    transform: translateX(1rem);
-
-  }
-
-}
-
-
-@keyframes moveEnemy{
-
-
-  0%,100%{
-
-    transform: translateX(0);
-
-  }
-
-  50%{
-
-    transform: translateX(-1rem);
-
-  }
-
-}
-
-
-
-.player_image{
-
-  animation: moveMkInFight 1s linear infinite;
-
-}
-
-
-.enemy_image{
-
-
-  animation: 1s linear infinite moveEnemy;
-
-}
-
-
-#rename-button{
-
-  /* *costume*/
-    color:#1ddf2d;
-        background-color: #000000;
-        font-size: 1.3rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-  /* *size */
-    width: 22rem;
-        height: 2.3rem;
-        border-radius: 11px 11px 11px 11px;
-
-}
-
-
-#reset_Game_section{
-
-  display: flex;
-    flex-flow: column-reverse;
-
-  align-self: center;
-
-  height: 100%;
-
-  gap:1.5rem;
-
-}
-
-
-#life-score-Player{
-
-  /* *costume */
-font-size: 1.3rem;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-
-#VersusMessage{
-
-  justify-self: center;
-    align-self: center;
-
-  /* *Costume */
-  color: #18dba1;
-    font-family:'Prompt', sans-serif;;
-
-  /* *Size */
-  font-size: 3rem;
-
-  margin: 0;
-
-  text-shadow: rgb(32, 30, 30) 0.10rem 0.3rem 0.1rem ;
-
-}
-
-
-#life-score-enemy{
-
-/* *Costume */
-  font-size: 1.3rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-#imageMkEnemy{
-
-  grid-area:1/5/1/6;
-
-}
-
-
-.life-score{
-
-  /* *Size*/
-  width: 17rem;
-    height: 24rem;
-    border-radius:8%;
-
-  /* *Costume*/
-  background-color: #031b1f;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    color:aliceblue;
-
-  /* *position */
-  text-align: center;
-
-}
-
-
-#div-lifes-game{
-
-/* *Position*/
-display: flex;
-
-gap:2rem;
-
-margin-top: 2rem;
-
-}
-
-
-#defeat-tittle{
-
-  /* *Costume*/
-  color:#04da81;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-  /* *Size*/
+#Select {
+  background-color: #1a1288;
+  color: #1cc4a0;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 2rem;
-
-  align-self: center;
-
-  margin:0;
-
+  width: 7rem;
+  height: 3.5rem;
+  box-sizing: border-box;
+  margin: 2rem;
+  border-radius: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-#new-game{
-
-  /* *Size*/
-    width:12rem;
-        height:2.5rem;
-        font-size: 1.4rem;
-
-  /* *Costume*/
-    color:#d6ec0e;
-        font-family:Arial, Helvetica, sans-serif;
-        background-color:#9804bd;
-        border-radius: 1rem 1rem 1rem 1rem;
-
+#Combat-Tittle {
+  font-size: large;
+  color: red;
 }
 
+.fire {
+  background-color: #e20a0a;
+}
 
-.label-mokepon{
-  /* *costume*/
-  background-color:#007599;
-    border:#01061d solid 0.6rem;
-    font-family:'Arimo', sans-serif ;
-  /* *Size*/
-  font-size:2.4rem;
-    border-radius: 12% 12% 12% 12%;
-  /* *position*/
+.Fire {
+  color: #e20a0a;
+}
+
+.ice {
+  background-color: #043783;
+}
+
+.Ice {
+  color: #043783;
+}
+
+.earth {
+  background-color: #0ae227;
+}
+
+.Earth {
+  color: #0ae227;
+}
+
+.steel {
+  background-color: #838884;
+}
+
+.Steel {
+  color: #838884;
+}
+
+.thunder {
+  background-color: #e4d50a;
+}
+
+.Thunder {
+  color: #e4d50a;
+}
+
+.air {
+  background-color: #0ae49b;
+}
+
+.Air {
+  color: #0ae49b;
+}
+
+.water {
+  background-color: #0d1f85;
+}
+
+.Water {
+  color: #0d1f85;
+}
+
+.fire, .water, .air, .earth, .steel, .thunder, .ice {
+  width: 11rem;
+  height: 5rem;
+  border-radius: 10%;
+  font-size: 1.5rem;
+  color: azure;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#attack-buttons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  gap: 1.2rem;
+}
+
+#input-rename-mokepon {
+  width: 9rem;
+  height: 2.6rem;
+  border-radius: 7%;
+  margin: 1rem 0 1rem 0;
+  font-size: 1.3rem;
+  background-color: #73e9b2;
+  color: #0521a0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  box-shadow: rgb(0, 0, 0) 0.3rem  0.3rem 0.3rem  0.3rem ;
+}
+
+#Rename-mokepon {
+  background-color: #19d6c6;
+  color: #0c0b50;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+
+#label-rename-button {
+  color: #0fd392;
+  font-size: 2.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.image-label-mokepon {
+  animation: moveMk linear 1s infinite;
+}
+
+@keyframes moveMk {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+}
+
+@keyframes moveMkInFight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1rem);
+  }
+}
+
+@keyframes moveEnemy {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1rem);
+  }
+}
+
+.player_image {
+  animation: moveMkInFight 1s linear infinite;
+}
+
+.enemy_image {
+  animation: 1s linear infinite moveEnemy;
+}
+
+#rename-button {
+  color: #1ddf2d;
+  background-color: #000000;
+  font-size: 1.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 22rem;
+  height: 2.3rem;
+  border-radius: 11px 11px 11px 11px;
+}
+
+#reset_Game_section {
+  display: flex;
+  flex-flow: column-reverse;
+  align-self: center;
+  height: 100%;
+  gap: 1.5rem;
+}
+
+#life-score-Player {
+  font-size: 1.3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#VersusMessage {
+  justify-self: center;
+  align-self: center;
+  color: #18dba1;
+  font-family: 'Prompt', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: rgb(32, 30, 30) 0.10rem 0.3rem 0.1rem;
+}
+
+#life-score-enemy {
+  font-size: 1.3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#imageMkEnemy {
+  grid-area: 1/5/1/6;
+}
+
+.life-score {
+  width: 17rem;
+  height: 24rem;
+  border-radius: 8%;
+  background-color: #031b1f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: aliceblue;
+  text-align: center;
+}
+
+#div-lifes-game {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+#defeat-tittle {
+  color: #04da81;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  align-self: center;
+  margin: 0;
+}
+
+#new-game {
+  width: 12rem;
+  height: 2.5rem;
+  font-size: 1.4rem;
+  color: #d6ec0e;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #9804bd;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.label-mokepon {
+  background-color: #007599;
+  border: #01061d solid 0.6rem;
+  font-family: 'Arimo', sans-serif;
+  font-size: 2.4rem;
+  border-radius: 12% 12% 12% 12%;
+  text-align: center;
+  box-shadow: rgb(0, 0, 0) 0.3rem 0.3rem 0.3rem 0.3rem;
   transition: all 400ms;
 }
 
-.label-mokepon:hover{
+.label-mokepon:hover {
   scale: 1.03;
 }
 
-
-.button-selection-mokepon{
-
+.button-selection-mokepon {
   display: none;
-
 }
 
-
-.button-selection-mokepon:checked + .label-mokepon{
+.button-selection-mokepon:checked + .label-mokepon {
   background-color: #07b1a3;
 }
 
-
-.spanTurns{
-
-  color:#beac0d;
-    font-size: 2.4rem;
-
+.spanTurns {
+  color: #beac0d;
+  font-size: 2.4rem;
 }
 
-
-#No-Rename-Mokepon{
-
-  /* *Costume*/
+#No-Rename-Mokepon {
   background-color: #19d6c6;
-    color:#0c0b50;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-/* *Size*/
+  color: #0c0b50;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.3rem;
-    height: 3rem;
-    width: 7rem;
-    border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
-
-  margin-bottom: 0.7rem;
-
-
-}
-
-
-.atackMessage{
-
-  /* *Costume*/
-  color: #c05252;
-
-  /* *Size*/
-  font-size:0.4rem;
-
-}
-
-#mapContainer{
-
-  display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-
-  gap:17%;
-
-  color:#42b68f;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:1.3rem;
-
-}
-
-#mokeponMap{
-
-  /** Costume*/
-  border: white 3px solid;
-
-  background-repeat: no-repeat;
-
-}
-
-
-#move-buttons-container{
-
-  margin-top:1rem;
-
+  height: 3rem;
   width: 7rem;
-    height: 7rem;
-
-  display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows:repeat(3,1fr);
-
-
+  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+  margin-bottom: 0.7rem;
 }
 
-
-
-.move-button{
-
-  background-color: #42b68f;
-
-  width: 2.4rem;
-    height: 2.4rem;
-
-    font-size: 1rem;
-
-} 
-
-#move-up{
-
-  grid-area: 1/2/1/3;
-
+.atackMessage {
+  color: #c05252;
+  font-size: 0.4rem;
 }
 
-#move-down{
-
-  grid-area: 3/2/3/3;
-
-}
-
-#move-right{
-
-  grid-area: 2/3/2/3;
-
-
-}
-
-#move-left{
-
-  grid-area:2/1/2/2;
-
-}
-
-#reset_button{
-
-  margin-top:1.5rem;
-
+#mapContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 17%;
+  color: #42b68f;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.3rem;
+}
 
+#mokeponMap {
+  border: white 3px solid;
+  background-repeat: no-repeat;
+}
+
+#move-buttons-container {
+  margin-top: 1rem;
+  width: 7rem;
+  height: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.move-button {
+  background-color: #42b68f;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1rem;
+}
+
+#move-up {
+  grid-area: 1/2/1/3;
+}
+
+#move-down {
+  grid-area: 3/2/3/3;
+}
+
+#move-right {
+  grid-area: 2/3/2/3;
+}
+
+#move-left {
+  grid-area: 2/1/2/2;
+}
+
+#reset_button {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
   width: 10rem;
-    height: 2.5rem;
-
-  color:azure;
-    background: #9804bd;
-
+  height: 2.5rem;
+  color: azure;
+  background: #9804bd;
 }
 
-
-@media(max-width:992px){
-
-
-  @keyframes moveMk{
-
-    0%,100%{
-  
+@media(max-width: 992px) {
+  @keyframes moveMk {
+    0%, 100% {
       transform: translateY(0);
-
     }
-  
-    50%{
-  
+    50% {
       transform: translateY(0.2rem);
-
     }
-  
   }
   
-  
-  @keyframes moveMkInFight{
-  
-    0%,100%{
-  
+  @keyframes moveMkInFight {
+    0%, 100% {
       transform: translateX(0);
-
     }
-  
-    50%{
-  
+    50% {
       transform: translateX(1rem);
-
     }
-  
   }
   
-  
-  @keyframes moveEnemy{
-  
-  
-    0%,100%{
-  
+  @keyframes moveEnemy {
+    0%, 100% {
       transform: translateX(0);
-
     }
-  
-    50%{
-  
+    50% {
       transform: translateX(-1rem);
-
     }
+  }
   
-  }
-
-
-  #div-lifes-game{
-
+  #div-lifes-game {
     display: flex;
-        flex-flow: row;
-
-    width: 100%;
-
-  }
-
-
-  #attack-buttons{
-
     flex-flow: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1.7rem;
-
-  }
-
-
-  #new-game{
-
-    font-size: 1.2rem;
-        width: 8rem;
-
-  }
-
-
-  .label-mokepon{
-
-    width:10rem;
-        height:11rem;
-        font-size: 1rem;
-
-    display: flex;
-        flex-flow:column-reverse;
-
-
-  }
-
-
-  .enemy_image{
-
-    width: 11rem;
-        height: 12.3rem;
-
-  }
-
-
-  .player_image{
-
-    width: 11rem;
-        height: 12.3rem;
-
-  }
-
-
-  #subtittle{
-
-    font-size:1.8rem;
-        height: 4%;
-        width:63%;
-        display: flex;
-        justify-content: center;
-
-  }
-
-
-  .image-label-mokepon{
-
-    width: 7rem;
-        height: 8rem;
-
-  }
-
-
-  #Select{
-
-    font-size: 1.3rem;
-        height: 2rem;
-        width: 4rem;
-
-  }
-
-
-  #main-tittle{
-
-    font-size: 5rem;
-
-    text-shadow: #04da81 0.1rem 0.3rem 0.1rem;
-
-  }
-
-
-  #mokeponMap{
-
-    width: 400px;
-        height:400px
-
-  }
-
-
-  .life-score{
-
-    height: 16rem;
-
-    width: 10.4rem;
-
-  }
-
-  #mokepon-name, #name-enemy, .Fire, .Ice, .Earth, .Air, .Steel, .Water{
-
-    font-size: 1rem;
-
-  }
-
-
-  .fire, .ice, .earth, .air, .steel, .water, .thunder{
-
-    font-size: 1rem;
-
-    width: 7rem;
-        height: 3.5rem;
-
-  }
-
-
-  #span-combat-result{
-
-    font-size: 1.7rem;
-
-    text-shadow: rgb(32, 30, 30) 0.10rem 0.2rem 0.1rem ;
-
-
-  }
-
-
-  #span-elements{
-
-    justify-content: start;
-        gap:0.2rem;
-
-  }
-
-
-  .spanTurns{
-
-    font-size: 2rem;
-
-  }
-
-
-
-}
-
-@media(max-width:768px){
-
-  .label-mokepon{
-
-    width:56%;
-        height:102%;
-        font-size:1.3rem;
-
-  }
-
-  .image-label-mokepon{
-
-    width:54%;
-
-  }
-
-  #main-tittle{
-
-    font-size:4rem;
-
-  }
-
-}
-
-
-@media(max-width:480px){
-
-
-  #div-selection-mokepon{
-
-    flex-flow: column;
-
-  }
-
-
-  @keyframes moveMk{
-
-    0%,100%{
-  
-      transform: translateY(0);
-
-    }
-  
-    50%{
-  
-      transform: translateY(0.5rem);
-
-    }
-
-  }
-
-
-
-  @keyframes moveMkInFight{
-
-    0%,100%{
-  
-      transform: translateX(0);
-
-    }
-  
-    50%{
-  
-      transform: translateX(0.5rem);
-
-    }
-  
-  }
-  
-  
-  @keyframes moveEnemy{
-  
-  
-    0%,100%{
-  
-      transform: translateX(0);
-
-    }
-  
-    50%{
-  
-      transform: translateX(-0.5rem);
-
-    }
-  
-  }
-
-
-  .image-label-mokepon{
-
-    width: 9rem;
-        height: 10rem;
-
-  }
-
-
-  #how_move_mokepon_message{
-
-    display:none;
-
-  }
-
-  #move-buttons-container{
-
-
-    width: 6rem;
-        height: 6rem;
-
-    margin-top: 1rem;
-
-  }
-
-
-  #reset_button{
-
-    font-size: 0.8rem;
-        border-radius: 1rem;
-
-    width: 7rem;
-        height: 2rem;
-
-    margin-top: 2rem;
-
-  }
-
-
-  #main-tittle{
-
-    font-size: 2rem;
-
-    text-shadow: #04da81 0.1rem 0.2rem 0.1rem;
-
-  }
-
-
-  #Select{
-
-    font-size: 1rem;
-
-  }
-
-
-  #div-tittle{
-
     width: 100%;
-        height: fit-content;
-
-    display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-        justify-content: center;
-
-  }
-
-  
-  #subtittle{
-
-    width: 70%;
-        font-size:1rem;
-
-  }
-
-
-  .move-button{
-
-    width: 2rem;
-        height: 2rem;
-
-    font-size: 0.6rem;
-
-  }
-
-
-  #mokeponMap{
-
-    width: 400px;
-        height: 400px;
-
   }
   
-
-  #mokepon-name{
-
-    font-size: 0.6rem;
-
-  }
-
-  .spanTurns{
-
-    font-size: 0.7rem;
-
-    margin:0 1.5rem 0 1.5rem;
-
-  }
-
-  #name-enemy{
-
-    font-size: 0.6rem;
-
-  }
-
-
-  #div-lifes-game{
-
-    display: flex;
-        flex-flow: row;
-
+  #attack-buttons {
+    flex-flow: row;
     justify-content: center;
-
-    gap:0rem;
-
-  }
-
-
-  .life-score{
-
-    height: 9rem;
-        width: 100%;
-
-  }
-
-  #imageMkPlayer, #imageMkEnemy{
-
-    width: fit-content;
-        height: fit-content;
-
-  }
-
-
-  .fire, .ice, .earth, .air, .thunder, .steel, .water{
-
-    width: 6.5rem;
-        height: 2.5rem;
-        font-size: 0.7rem;
-
-  }
-
-
-  .Fire, .Ice, .Earth, .Steel, .Thunder, .Water, .Air{
-
-    font-size: 0.4rem;
-
-  }
-
-
-  #defeat-tittle{
-
-    font-size:0.8rem;
-
-  }
-
-  #VersusMessage{
-
-    font-size: 1.4rem;
-
-  }
-
-
-  #new-game{
-
-    width: 4rem;
-        height: 2rem;
-
-    font-size: 0.8rem;
-
-  }
-
-
-  .player_image, .enemy_image{
-
-    width: 5rem;
-        height: 5rem;
-
-
-  }
-
-
-  .player_image{
-
-    margin-right: 1rem;
-
-  }
-
-
-  .enemy_image{
-
-    margin-left: 1rem;
-
-  }
-
-
-  #attack-buttons{
-
-    flex-flow: row;
-        gap:0.3rem;
-
-    margin-top: 1rem;
-
-  }
-
-
-  #game-functionality{
-
-    display: none;
-
-  }
-
-
-  .player_image, .enemy_image{
-
-    width: 5.2rem;
-        height: 5.2rem;
-
-  }
-
-
-  #reset_Game_section{
-
-    width: 5rem;
-        height: 9rem;
-
-  }
-
-  #span-combat-result{
-
-    font-size: 0.74rem;
-
-  }
-
-
-  #reset_Game_section{
-
-    height: 80%;
-
-    transform: translateY(-5%);
-
-  }
-
-  #enemy-atacks-box{
-
-    margin:0;
-
-  }
-
-
-  #new-game{
-
-    width: 3.5rem;
-
-    font-size: 0.6rem;
-
-    height: 1.5rem;
-
-  }
-
-  #life-score-Player{
-
-    margin-right: 0.2rem;
-
-  }
-
-
-  #life-score-enemy{
-
-    margin-left: 0.2rem;
-
-  }
-
-
-  #mapContainer{
-
-    margin-top: 1rem;
-
-  }
-
-}
-
-
-
-
-
-
-
-/*nota del cap 37, podemos modificar la propiedad "margin, añadiendo hasta 4 valores que determinan cada lado
-del margen, en el sentido de las manecillas del reloj
-
-seria algo asi : 
-
-margin:"margin-top" "margin-right" "margin-bottom" "margin-left"
-
-osea que al poner valores modificaria las propiedades en el orden que mostre arriba
-
-margin:10px 23px 22px 56px;
-
-*/
-
-
-/*Para aprender mejor css esta css reference*/
-
-
-/*NOTA DEL CAP 32
-
-Hay 3 tipos de selectores en css (los selectores son las formas en la que conectamos elementos html para estilizarlos, de tipo(mismos nombre de la etiqueta), clase, y de id
-
-Para aprender mejor css esta css reference*/
-
-/*NOTA CAP 33
-En css tenemos principalmente:2,2,auto displays
-display block, display inline
-
-Los elementos de tipo Block se le puede manipular el ancho(width) y el alto (height) 
-
-Los elementos de tipo inline no se le puede manipular el ancho(width) ni el alto(height) 
-
-Podemos modificar valores las propiedades en css solo escribiendo la primera letra de la propiedad y el valor numerico que le queremos asignar
-
-ejemplo
-
-w234 (width:234px;)
-p68 (padding:68px;)
-h25 (height:25px;)
-
-y luego le presionamos tab y el resto del texto se generará rapidamente
-*/
-
-/*selector de tipo*/
-
-/*NOTA DOCUMENTACION CSS TRICKS::
-To manipulate align-items or "inline elements" we have the properties flex-grown(adjust
-automatically the size),flex-shrink(to shrink automacally the align-items) and flex-basis(that is only
-the size that will have the element when the space in the container is distributed).
-
-a short hand for this is only use "flex:2,2,auto,4,12%" that just with this, the first value will
-be aplied toward "grow" property, the second to "shrink" property and thirth to "basis" property */
-
-/*Trick with align-self
-
-align-self is useful when we want to change the position of a singular item in our parent element*/
-
-
-/* 5 FORMAS DE CENTRAR EN CSS
-
-1)
-
-#Judas{
-
-width:fit-content;
-  margin: 0 auto;
-}
-  este metodo tiene la limitacion de requerir un Size definido, y que el elemento este en vertical
-  
-
-:2,2,auto)
-
-    #Pedro{
-
-  text-align:center;
-
-    }
-  solo nos vale si hay una linea definida , ya que lo que hace es que el Size de la linea coincida con el Size del contendor
-
-
-  3)
-
-    #Angel{
-
-  position:aboslute;
-    top:50%;
-    left:50%
-  transform :translate(-50%, -50%);
-
-    }
-
-  este metodo consiste en modificar directamente el anclaje por defecto de css (esquina superior izquierda) con el atributo de que esta posicion sea absoluta, y al transladar los valores absolutos que fijamos la imagen cambiara su anclaje por defecto hasta alli.
-
-
-  4)
-
-  #Juan{
-
-  display:flex;
-    justify-content:center;
     align-items: center;
-    }
-
-  Este metodo es moderno, y nos sera util para la gran mayoria de cosas que queramos centrar con css
-
-  5)
-
-  #last{
-
-    display grid;
-      }
-
-  .last.grid-item{
-
-    align-items:center;
-
-    justify-italign-items:center;
-
-}
-
-    la forma con grid nos da mayor cantidad de herramientas para manipular nuestro elemento en proyectos mas complejos, pero el flex es tambien bastante versatil
-
-  */
-
-/*NOTA CAP 37
-we can use "Pinterest" to get ideas from web design
-Use "fonts google" to the fonts
-And "color hunt" to good color paletes*/
-
-/*HOME WORK READ ABOUT "IMPORT" IN CSS
-
-CAP 37 IN 7:51*/
-
-/* Cap 41 CSS GRID
-
-
-CSS grid nos permite ubicar elementos para ubicar en horizontal y vertical a la  vez
-
-a trick with grid is use repeat that let us aply the same values for a lot of new columns or row that we could need to create
-
-.container {
-  display: grid;
-    grid-auto-flow: column dense;
-
-  grid-template-columns: repeat(4, [col] 1fr);
-    grid-template-rows: repeat(5, [row] 150px);
+    gap: 1.7rem;
   }
-
-  LONG FORM
-
-  .container {
-  display: grid;
-    grid-auto-flow: column dense;
-
-  grid-template-columns:
-    [col] 1fr
-    [col] 1fr
-    [col] 1fr
-    [col] 1fr;
-      grid-template-rows:
-    [row] 150px
-    [row] 150px
-    [row] 150px
-    [row] 150px
-    [row] 150px;
-    }
-
-A useful trick when we want to aply a gap toward our grid elements is use only "gap", and aply the row gap and the column gap 
-
-.container {
-
-  "standard" 
-  gap: <grid-row-gap> <grid-column-gap>;
-
-
-  "old"
-  grid-gap: <grid-row-gap> <grid-column-gap>;
-  }
-
-example
-
-.container {
-  grid-template-columns: 100px 50px 100px;
-    grid-template-rows: 80px auto 80px; 
-  gap: 15px 10px;
-  }
-
-
-PLACE ITEMS
-
-place-items sets both the align-items and justify-items properties in a single declaration.
-
-we aplied the place items seing like the first value that we put aplied like "align-items" and the second like "justify-items".
-
-example
-
-.contentExample{
-  display:grid;
-    place-items:center start;
-  }
-
-This can be very useful for super quick multi-directional centering.
-
-PLACE CONTENT
-
-its a property  that combine "justify-content"" and "align-content" and let us aply the both properties ,first taking values like "align-content, and before "justify-content"
-
-example:
-
-.placeContentExample{
-  display:grid;
-    place-content:start space-between;
-
-}
-
-A little useful value that we could use to auto fill or auto fit the size of our grid templates its with "auto-fill" and "auto-fit"
-
-example
-
-#ex{
   
-  display:grid;
-    grid-template-column:repeat(auto-fill,10px);
-    grid-template-row:repeat(auto-fit,10px);
-
-}
-
-this is so useful because you don´t need to put a number of elements, only you can put "auto-fill" or "auto-fit" and it will works to all  your elements
-
-the diferences in 2 methods is that "auto-fill" create as many tracks as be necesary but never go out the grid.
-
-And "auto-fit" create the tracks only into the grid item placement, and after of that, the rest of tracks repeated will colapse, and will be created out of the grid.
-
-
-GRID PROPERTIE:
-
-we use this to set the position of our elements into the grid aplying the propertie grid-template-row and grid-template-column at the same time in one propertie 
-
-example:
-
-.cont{
-
-  grid:2px 32px / 2fr 4fr;
-
-}
-
-
-AUTO-GRID PROPERTIE:
-
-is a useful propertie that we use to reply values or set specific values automacally in our grid when we exceed the number of rows or columns in the grid
-
-example:
-
-#tulas{
-
-  grid-auto-rows:234px;
-    grid-auto-columns:300px;
-
-}
-
--
-
-
-
-A special values to set the size into our columns or row are "auto-flow","auto", "row-dense", "column-dense"
-
-
-for resposive desing we have to use media querys to that, we could use it to separate how our html and css sees in other dispositives
-
-*/
-
-/* a little trick is that we can concat multiple elements or classes putting a scope like this:
-
-  #julio,#Pedro{
-  
-    color:red;
-
+  #new-game {
+    font-size: 1.2rem;
+    width: 8rem;
   }
+  
+  .label-mokepon {
+    width: 10rem;
+    height: 11rem;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  
+  .enemy_image {
+    width: 11rem;
+    height: 12.3rem;
+  }
+  
+  .player_image {
+    width: 11rem;
+    height: 12.3rem;
+  }
+  
+  #subtittle {
+    font-size: 1.8rem;
+    height: 4%;
+    width: 63%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-label-mokepon {
+    width: 7rem;
+    height: 8rem;
+  }
+  
+  #Select {
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 4rem;
+  }
+  
+  #main-tittle {
+    font-size: 5rem;
+    text-shadow: #04da81 0.1rem 0.3rem 0.1rem;
+  }
+  
+  #mokeponMap {
+    width: 400px;
+    height: 400px
+  }
+  
+  .life-score {
+    height: 16rem;
+    width: 10.4rem;
+  }
+  
+  #mokepon-name, #name-enemy, .Fire, .Ice, .Earth, .Air, .Steel, .Water {
+    font-size: 1rem;
+  }
+  
+  .fire, .ice, .earth, .air, .steel, .water, .thunder {
+    font-size: 1rem;
+    width: 7rem;
+    height: 3.5rem;
+  }
+  
+  #span-combat-result {
+    font-size: 1.7rem;
+    text-shadow: rgb(32, 30, 30) 0.10rem 0.2rem 0.1rem;
+  }
+  
+  #span-elements {
+    justify-content: start;
+    gap: 0.2rem;
+  }
+  
+  .spanTurns {
+    font-size: 2rem;
+  }
+}
 
-Antes me daba miedo comenzar a aprender CSS pero desde que tomo estas clases ya me siento más seguro y motivado para seguir aprendiendo 😊😊😊
+@media(max-width: 768px) {
+  .label-mokepon {
+    width: 56%;
+    height: 102%;
+    font-size: 1.3rem;
+  }
+  
+  .image-label-mokepon {
+    width: 54%;
+  }
+  
+  #main-tittle {
+    font-size: 4rem;
+  }
+}
 
-Algo que me ayudo bastante fue darle en la Consola a Device toolbar para visualizar la página en diferentes resoluciones Ojalá les sirva 💚 💚
-
-
-cap 43:Pseudo clases en css:
-
-  Las pseudo clases son los atributos que css usa para estilizar las acciones de un usuario respecto a un elemento html
-
-  por ejemplo:
-
-  inputs html:
-  :hover = representa cuando el cursor se posa sobre un boton o un elemento
-  :active = representa cuando por ejemplo le damos click a un boton
-  :checked = representa cuando nuestro input ya fue clickeado
-
-  tambien por ejemplo podemos concatenar los estilos de elementos hermanos en nuestro html, por ejemplo un label y un input
-*/
+@media(max-width: 480px) {
+  #div-selection-mokepon {
+    flex-flow: column;
+  }
+  
+  @keyframes moveMk {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(0.5rem);
+    }
+  }
+  
+  @keyframes moveMkInFight {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(0.5rem);
+    }
+  }
+  
+  @keyframes moveEnemy {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-0.5rem);
+    }
+  }
+  
+  .image-label-mokepon {
+    width: 9rem;
+    height: 10rem;
+  }
+  
+  #how_move_mokepon_message {
+    display: none;
+  }
+  
+  #move-buttons-container {
+    width: 6rem;
+    height: 6rem;
+    margin-top: 1rem;
+  }
+  
+  #reset_button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    width: 7rem;
+    height: 2rem;
+    margin-top: 2rem;
+  }
+  
+  #main-tittle {
+    font-size: 2rem;
+    text-shadow: #04da81 0.1rem 0.2rem 0.1rem;
+  }
+  
+  #Select {
+    font-size: 1rem;
+  }
+  
+  #div-tittle {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #subtittle {
+    width: 70%;
+    font-size: 1rem;
+  }
+  
+  .move-button {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.6rem;
+  }
+  
+  #mokeponMap {
+    width: 400px;
+    height: 400px;
+  }
+  
+  #mokepon-name {
+    font-size: 0.6rem;
+  }
+  
+  .spanTurns {
+    font-size: 0.7rem;
+    margin: 0 1.5rem 0 1.5rem;
+  }
+  
+  #name-enemy {
+    font-size: 0.6rem;
+  }
+  
+  #div-lifes-game {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 0rem;
+  }
+  
+  .life-score {
+    height: 9rem;
+    width: 100%;
+  }
+  
+  #imageMkPlayer, #imageMkEnemy {
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .fire, .ice, .earth, .air, .thunder, .steel, .water {
+    width: 6.5rem;
+    height: 2.5rem;
+    font-size: 0.7rem;
+  }
+  
+  .Fire, .Ice, .Earth, .Steel, .Thunder, .Water, .Air {
+    font-size: 0.4rem;
+  }
+  
+  #defeat-tittle {
+    font-size: 0.8rem;
+  }
+  
+  #VersusMessage {
+    font-size: 1.4rem;
+  }
+  
+  #new-game {
+    width: 4rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+  
+  .player_image, .enemy_image {
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .player_image {
+    margin-right: 1rem;
+  }
+  
+  .enemy_image {
+    margin-left: 1rem;
+  }
+  
+  #attack-buttons {
+    flex-flow: row;
+    gap: 0.3rem;
+    margin-top: 1rem;
+  }
+  
+  #game-functionality {
+    display: none;
+  }
+  
+  .player_image, .enemy_image {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+  
+  #reset_Game_section {
+    width: 5rem;
+    height: 9rem;
+  }
+  
+  #span-combat-result {
+    font-size: 0.74rem;
+  }
+  
+  #reset_Game_section {
+    height: 80%;
+    transform: translateY(-5%);
+  }
+  
+  #enemy-atacks-box {
+    margin: 0;
+  }
+  
+  #new-game {
+    width: 3.5rem;
+    font-size: 0.6rem;
+    height: 1.5rem;
+  }
+  
+  #life-score-Player {
+    margin-right: 0.2rem;
+  }
+  
+  #life-score-enemy {
+    margin-left: 0.2rem;
+  }
+  
+  #mapContainer {
+    margin-top: 1rem;
+  }
+}
