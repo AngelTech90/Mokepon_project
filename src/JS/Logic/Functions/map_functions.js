@@ -24,18 +24,7 @@ function startAnimationsForever(){
 //*This function is a global caller that will start all the animations of our map enmies:
 function animationsCaller(){
 
-    moveEnemies1();
-    moveEnemies2();
-    moveEnemies3();
-    moveEnemies4();
-    moveEnemies5();
-    moveEnemies6();
-    moveEnemies7();
-    moveEnemies8();
-    moveEnemies9();
-    moveEnemies10();
-    moveEnemies11();
-    moveEnemies12();
+    moveEnemies()
 
 }
 

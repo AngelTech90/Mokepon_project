@@ -95,7 +95,7 @@ function mapEnemiesRendering(){
  
     removeDefeatedEnemyOfMap();//*We take our of our map our defeated enemy, or we restart the atacks
      
-     mapBackground.src = 'assets/images/mokemap.png';//*Here we set the image of our map
+     mapBackground.src = '../../../../assets/images/mokemap.png';//*Here we set the image of our map
  
      endCombat = false;//*We reset our combat every time we finish once.
  

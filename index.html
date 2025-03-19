@@ -1,158 +1,66 @@
-<!--Estas haciendo un programa para practicar un poco mejopr como hacer estructuras html el cual es un juego html para imitar pokemon -->
-
-
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head id = "head">
-    
-    <script src="https://kit.fontawesome.com/09fe3c9c5c.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/CSS/main.css">
+    <title>Mokepon world</title>
+</head>
+<body>
 
-    <link rel = "icon" href = "assets/images/joka.ico">
-  
-    <!-- * JavaScript modules: -->
-  <!-- Don't modify the order of the scripts loading! -->
-  
-  <!-- *First we render all our elements of our program like vars, classes, objects and data structures: -->
-  <script defer src= "./src/JS/Logic/Functions/global_functions.js"></script>
-  <script defer src="./src/JS/Logic/global/combat_vars.js"></script>
-  <script defer src="./src/JS/Logic/global/DOM_vars.js"></script>
-  <script defer src="./src/JS/Logic/global/map_vars.js"></script>
-  <script defer src="./src/JS/Logic/Data_structures/combat_data_structures.js"></script>
-  <script defer src="./src/JS/Logic/Data_structures/global_data_structures.js"></script>
-  <script defer src="./src/JS/Logic/Data_structures/map_data_structures.js"></script>
-  <script defer src= "./src/JS/Logic/Classes/global_classes.js"></script>
-  <script defer src= "./src/JS/Logic/Objects/global_objects.js"></script>
-  
-  <!-- *Now we load our logi functions and animations -->
-  <script defer src= "./src/JS/Logic/Functions/combat_functions.js"></script>
-  <script defer src= "./src/JS/Logic/Functions/render_functions.js"></script>
-  <script defer src= "./src/JS/Logic/Functions/map_functions.js"></script>
-  <script defer src= "./src/JS/Logic/Functions/information_functions.js"></script>
-  <script defer src="./src/JS/Animations/map_animations.js"></script>
-  <script defer src= "./src/JS/Animations/set_map_enemies.js"></script>
+    <div class="motherBox">
 
-  <!-- Here we'll load our sound scripts -->
-  <script defer src="./src/JS/sounds_controllers/music/mainMenuMusic.js"></script>
-  
-  <!-- *Now we Boot all our program functions using our core main file: -->
-  <script defer src = "./src/JS/Core/main.js"></script>
-  
-  
-    <!-- * Css modules: -->
-    <link rel ="stylesheet" href="./src/CSS/main.css">
-  
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <header class="header">ç
+            <nav>
+                <ul>
+                    <li class="navbarOption"><a href="#" class="navbarLink"></a></li>
+                    <li class="navbarOption"><a href="#" class="navbarLink"></a></li>
+                    <li class="navbarOption"><a href="#" class="navbarLink"></a></li>
+                </ul>
+            </nav>
+        </header>
 
-  </head>
-  
-    <body>
+        <section class="mainSection">
+            <div class="mapContainer">
+                <img src="" alt="" class="mapImage">
+                <h4 class="mapTitle"></h4>
+                <button class="mapButton"><a href="" class="mapAccess"></a></button>
+            </div>
 
-      <header id = "main-tittle" class="tittle">MONSTER HUNT!</header>
+            <div class="mapContainer">
+                <img src="" alt="" class="mapImage">
+                <h4 class="mapTitle"></h4>
+                <button class="mapButton"><a href="" class="mapAccess"></a></button>
+            </div>
 
-      <div class="tittle" id="div-tittle">
+            <div class="mapContainer">
+                <img src="" alt="" class="mapImage">
+                <h4 class="mapTitle"></h4>
+                <button class="mapButton"><a href="" class="mapAccess"></a></button>
+            </div>
 
-        <h2 id="subtittle" class="tittle">Choose Your Monster</h2>
+            <div class="mapContainer">
+                <img src="" alt="" class="mapImage">
+                <h4 class="mapTitle"></h4>
+                <button class="mapButton"><a href="" class="mapAccess"></a></button>
+            </div>
 
-      </div>
+            <div class="mapContainer">
+                <img src="" alt="" class="mapImage">
+                <h4 class="mapTitle"></h4>
+                <button class="mapButton"><a href="" class="mapAccess"></a></button>
+            </div>
 
-      
-  <div class="selection-mokepon" id ="div-selection-mokepon">
+            <div class="mapContainer">
+                <img src="" alt="" class="mapImage">
+                <h4 class="mapTitle"></h4>
+                <button class="mapButton"><a href="" class="mapAccess"></a></button>
+            </div>
+            
+        </section>
 
-</div>
-
-<!-- Mokepon map -->
-<div id="mapContainer">
-
-  <canvas id="mokeponMap"></canvas>
-
-  <p id = "how_move_mokepon_message">Use (w a s d) for move your <span id = mkMapSpan></span></p>
-
-<div id="move-buttons-container">
-
-  <button class="move-button" id = "move-up"><i class="fa-solid fa-arrow-up"></i></button>
-  <button class="move-button" id = "move-down" ><i class="fa-solid fa-arrow-down"></i></button>
-  <button class="move-button" id = "move-right"><i class="fa-solid fa-arrow-right"></i></button>
-  <button class="move-button" id = "move-left"><i class="fa-solid fa-arrow-left"></i></button>
-
-
-</div>
-
-  <button  id = "reset_button">RESET GAME</button>
-
-</div> 
-
-<!-- WE CAN USE SHIFT+ALT+A TO COMENT OUR CODE ! -->
-  <div id = "selection-button">
-    <button id ="Select">SELECT</button> <!--We this button we choose our Mk-->
-  </div>
-  
-
-  <div id ="div-lifes-game">
-
-    <p id ="imageMkPlayer"></p>  
-
-    <div class = "life-score" id ="life-score-Player">
-      
-      <span id ="victories-Span-Player" class = "spanTurns">0</span>
-      
-      <br>
-      
-      <span id="mokepon-name"></span>
-    
+        <footer class = "footerSection"></footer>
     </div>
 
-    <section id = "reset_Game_section">
-
-      <button id = "new-game">RESET</button>
-
-      <p id = "VersusMessage">VS</p>
-
-      <p id = "defeat-tittle"><span id ="span-combat-result">FIGHT!</span></p>
-    
-
-    </section>
-    
-    
-    <div class ="life-score" id = "life-score-enemy">
-      
-      <span id = "victories-Span-enemy"  class = "spanTurns">0</span>
-      
-      <br>
-      
-      <span id = "name-enemy"></span>
-
-      <p id="enemy-atacks-box"></p>
-    
-    </div>
-
-    <p id ="imageMkEnemy"></p>
-
-    </div>
-
-<div id = "attack-buttons">
-
-</div>
-
-
-  <div id ="game-functionality"> 
-      
-    <section id = "rename_Mk_form">
-
-      <label id = "label-rename-button"  for = "rename-button" >Rename your <span id ="span-rename-mokepon">mokepon</span> </label>
-      
-    <input type = "text" id = "rename-button">
-    <input id = "Rename-mokepon" type = "submit" value="Rename">
-    <input id = "No-Rename-Mokepon" type = "submit" value = "No rename">
-
-    </section>
-    
-      
-  </div>  
-  
 </body>
-
 </html>
-
