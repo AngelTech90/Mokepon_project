@@ -12,8 +12,11 @@ header{
 
 .optionsContainer{
     display: flex;
-    width: ;
+    width: 60%;
     height: auto;
 }
 
-.headerContainer{}
+.headerContainer{
+    height: auto;
+    width: 40%;
+}
